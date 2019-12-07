@@ -1,0 +1,10 @@
+.navbar-brand img {
+  width: auto;
+  height: auto;
+  font-size: 200px;
+  max-width: fit-content;  // Must override default responsive image style.
+}
+
+body {
+  background-color: black;
+}
