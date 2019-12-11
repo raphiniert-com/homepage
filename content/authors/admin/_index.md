@@ -31,17 +31,16 @@ interests:
 
 education:
   courses:
-  - course: M.Sc. in Computer Science
+  - course: MSc in Computer Science
     institution: University of Freiburg, Germany
     year: 2015
   - course: Exchange Year
     institution: Queens University Kingston, ON, Canada
     year: 2012/2013
-  - course: BSc in Artificial Intelligence
+  - course: BSc in Computer Science
     institution: University of Freiburg, Germany
     year: 2011
-  - course: Allgemeine Hochschulreife, 
-            Profilfach Informatik
+  - course: Allgemeine Hochschulreife (highschool)
     institution: Gewerbliche und Hauswirtschaftlich-Sozialpflegerische Schulen Emmendingen, Informationsteschnisches Gymnasium
     year: 2006
 
@@ -62,6 +61,9 @@ social:
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?hl=en&user=gQ2pZf8AAAAJ
+- icon: publons
+  icon_pack: ai
+  link: https://publons.com/researcher/2973216/raphael-scheible
 - icon: github
   icon_pack: fab
   link: https://github.com/scheiblr
@@ -82,6 +84,6 @@ user_groups:
 - Visitors
 ---
 
-Raphael Scheible is a computer scientist located at Freiburg im Breisgau in Germany. His research interests include medical computer science, natural language processing and medical imaging. He works at the Institute of Medical Biometry and Statistics (IMBI) at the Albert-Ludwigs-Universität Freiburg, which is part of the [MIRACUM project](https://micarum.org).
+Raphael Scheible is a computer scientist located at Freiburg im Breisgau in Germany. His research interests include medical computer science, natural language processing and medical imaging. He works at the Institute of Medical Biometry and Statistics (IMBI) at the Albert-Ludwigs-Universität Freiburg, which is part of the [MIRACUM project](https://miracum.org).
 
 In 2016 Raphael decided to accept Jesus Christ as his lord and saviour and asked him to forgive all his sins. Consequently, he became a [born again Christian](https://en.wikipedia.org/wiki/Born_again#Evangelicalism). Now, he volunteers as a leader of a prayergroup at the local church [Christengemeinde Freiburg](https://cgfr.de). When he got born again and freed from the demons he was possessed of, his life changed dramatically and he became a new person. Read more about it [here](jesus).
