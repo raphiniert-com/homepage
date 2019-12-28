@@ -38,6 +38,11 @@ url_video: ""
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
 slides: ""
+
+draft: false
+share: false
+commentable: false
+editable: false
 ---
 ## Features
 
