@@ -1,16 +1,25 @@
 ---
 title: Spiritual Life
+summary: "How I met the one and only living God"
+authors: [admin]
+tags: [Godly encounter, Jesus Christ, Unconditional Love]
 
+date: 2019-12-28T22:02:00+01:00
 # View.
 #   1 = List
 #   2 = Compact
 #   3 = Card
-view: 1
+view: 3
 
 # Optional header image (relative to `static/img/` folder).
 header:
   caption: ""
   # image: "bg/jesus.jpg"
+
+draft: false
+share: true
+commentable: false
+editable: false
 ---
 
 As child I grew up catholic and I remember myself as praying regularly, well knowing and sensing when I did things that were not good for me and against love. On the other side, I ever had issues with my sexuality and eventually fell into bad habbits at a very early age as child. Early I had several girlfriends and way too early I had my first sexual encounters. Further, I fell into drug habbits, smoked wheed and always was looking for freedom in my heart. When I was under alcoholic influence, I was a moron and sometimes treated people very unfair und unloving. I further started to play guitar in a band called Demon Seed, later they renamed to [Frozen Infinity](https://www.metal-archives.com/bands/Frozen_Infinity/81415). The athmosphere in the band sessions were, let's say, weired. I would say, we were a bunch of young guys dreaming of some success and playing at some events, which at least for me, never happened. I went to high-school, did my degree and just lived with my inner emptiness and powerlessness. In 2007 I did my Civil Service and in the last month of that life period 
