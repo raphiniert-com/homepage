@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Nelson Bighetti
+name: Raphael Scheible
 
 # Username (this should match the folder name)
 authors:
@@ -10,32 +10,39 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Follower of Jesus Christ & Computer Scientist
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
-  url: ""
+- name: raphiniert.com
+  url: "https://raphiniert.com"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include medical informatics, natural language processing, image processing & analysis and software engineering.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
+- Jesus Christ
+- Natural Language Processing
 - Information Retrieval
+- Databases
+- System Engineering
+- Medical Imaging
+
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: MSc in Computer Science
+    institution: University of Freiburg, Germany
+    year: 2015
+  - course: Exchange Year
+    institution: Queens University Kingston, ON, Canada
+    year: 2012/2013
+  - course: BSc in Computer Science
+    institution: University of Freiburg, Germany
+    year: 2011
+  - course: Allgemeine Hochschulreife (highschool)
+    institution: Gewerbliche und Hauswirtschaftlich-Sozialpflegerische Schulen Emmendingen, Informationsteschnisches Gymnasium
+    year: 2006
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -45,15 +52,22 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+- icon: orcid
+  icon_pack: ai
+  link: http://orcid.org/0000-0003-2067-5569
+- icon: researchgate
+  icon_pack: ai
+  link: https://www.researchgate.net/profile/Raphael_Scheible
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.com/citations?hl=en&user=gQ2pZf8AAAAJ
+- icon: publons
+  icon_pack: ai
+  link: https://publons.com/researcher/2973216/raphael-scheible
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/scheiblr
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -70,6 +84,6 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Raphael Scheible is a computer scientist located at Freiburg im Breisgau in Germany. His research interests include medical computer science, natural language processing and medical imaging. He works at the Institute of Medical Biometry and Statistics (IMBI) at the Albert-Ludwigs-Universität Freiburg, which is part of the [MIRACUM project](https://miracum.org).
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+In 2016 Raphael decided to accept Jesus Christ as his Lord and saviour and asked him to forgive all his sins. Consequently, he became a [born again Christian](https://en.wikipedia.org/wiki/Born_again#Evangelicalism). Now, he volunteers as a leader of a prayergroup at the local church [Christengemeinde Freiburg](https://cgfr.de). When he got born again and freed from the demons he was possessed of, his life changed dramatically for the better and he became a new person. Read more about it [here](jesus).

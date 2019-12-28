@@ -15,21 +15,75 @@ subtitle = ""
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 
 [[feature]]
-  icon = "r-project"
+  icon = "bible"
+  icon_pack = "fas"
+  name = "Jesus Christ"
+  description = "100%"
+
+[[feature]]
+  icon = "cogs"
+  icon_pack = "fas"
+  name = "Software Engineering"
+  description = "100%"
+
+[[feature]]
+  icon = "laptop-medical"
+  icon_pack = "fas"
+  name = "Medical Computer Science"
+  description = "80%"
+
+[[feature]]
+  icon = "database"
+  icon_pack = "fas"
+  name = "PostgreSQL"
+  description = "100%" 
+
+[[feature]]
+  icon = "linux"
   icon_pack = "fab"
-  name = "R"
-  description = "90%"
-  
+  name = "Linux"
+  description = "100%"
+
+[[feature]]
+  icon = "school"
+  icon_pack = "fas"
+  name = "Teaching"
+  description = "100%"
+
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
   name = "Statistics"
-  description = "100%"  
-  
+  description = "80%"
+
 [[feature]]
-  icon = "camera-retro"
+  icon = "php"
+  icon_pack = "fab"
+  name = "PHP"
+  description = "80%"
+
+[[feature]]
+  icon = "react"
+  icon_pack = "fab"
+  name = "React"
+  description = "80%" 
+
+[[feature]]
+  icon = "docker"
+  icon_pack = "fab"
+  name = "Docker"
+  description = "80%" 
+
+[[feature]]
+  icon = "python"
+  icon_pack = "fab"
+  name = "Python"
+  description = "60%" 
+
+[[feature]]
+  icon = "basketball-ball"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Basketball"
+  description = "30%"
 
 +++
