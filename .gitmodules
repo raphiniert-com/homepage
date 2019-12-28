@@ -4,3 +4,7 @@
 [submodule "themes/matomo"]
 	path = themes/matomo
 	url = https://github.com/holehan/hugo-components-matomo.git
+[submodule "public"]
+	path = public
+	url = https://github.com/scheiblr/scheiblr.github.io.git
+	branch = master
