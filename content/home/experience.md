@@ -60,6 +60,8 @@ date_format = "Jan 2006"
   date_start = "2016-10-01"
   date_end = "2018-02-28"
   description = """
+  Supervision of a Bachelorthesis in Winter 2018
+
   Courses:
   
   * Winter 2017 - Computer Graphics
