@@ -4,3 +4,19 @@
   font-size: 200px;
   max-width: fit-content;  // Must override default responsive image style.
 }
+
+figure.floatright {
+	max-width: 30%;
+	width: auto;
+	height: auto;
+  float: right;
+  margin-left: 3%;
+}
+
+figure.floatleft {
+	max-width: 30%;
+	width: auto;
+	height: auto;
+  float: left;
+  margin-right: 3%;
+}
