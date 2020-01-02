@@ -20,7 +20,7 @@ copyright = "&copy; {year} Raphael Scheible"
 ############################
 
 # Name of Academic theme folder in `themes/`.
-theme = ["academic", "matomo"]
+theme = ["academic"]
 
 # Get last modified date for content from Git?
 enableGitInfo = false
@@ -66,18 +66,4 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
-
-
-# Matomo
-[params.matomo]
-url = "https://analytics.raphiniert.com"
-id = 2
-
-[params.matomo.track]
-button = "Datenerhebung zulassen"
-message = "Ihre Sitzungsdaten werden erhoben."
-
-[params.matomo.block]
-button = "Datenerhebung abstellen"
-message = "Ihre Sitzungsdaten werden *nicht* erhoben."
 
