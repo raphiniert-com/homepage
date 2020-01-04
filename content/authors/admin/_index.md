@@ -27,6 +27,7 @@ interests:
 - Databases
 - System Engineering
 - Medical Imaging
+- Heavy Metal Music
 
 
 education:
@@ -67,6 +68,10 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/scheiblr
+- icon: spotify
+  icon_pack: fab
+  link: https://open.spotify.com/playlist/1M61SvuPUWxTN7qPTvpA0P
+
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -87,3 +92,5 @@ user_groups:
 Raphael Scheible is a computer scientist located at Freiburg im Breisgau in Germany. His research interests include medical computer science, natural language processing and medical imaging. He works at the Institute of Medical Biometry and Statistics (IMBI) at the Albert-Ludwigs-Universität Freiburg, which is part of the [MIRACUM project](https://miracum.org).
 
 In 2016 Raphael decided to accept Jesus Christ as his Lord and saviour and asked him to forgive all his sins. Consequently, he became a [born again Christian](https://en.wikipedia.org/wiki/Born_again#Evangelicalism). Now, he volunteers as a leader of a prayergroup at the local church [Christengemeinde Freiburg](https://cgfr.de). When he got born again and freed from the demons he was possessed of, his life changed dramatically for the better and he became a new person. Read more about it [here](jesus).
+
+Furthermore, I love hard music. Check out my [spotify playlist](https://open.spotify.com/playlist/1M61SvuPUWxTN7qPTvpA0P).
