@@ -67,6 +67,11 @@ For my yoke is easy, and my burden is light.
 
 God bless you!
 
+
+Watch the following movie to see what God is still doing through his desciples today:
+{{< youtube fsxUZEqdKYw >}}
+
+
 [^John16:04]: [The Bible, John 14:6](https://www.bibleserver.com/KJV/John14%3A6)
 [^Mat17:21]: [The Bible, Matthew 14:21](https://www.bibleserver.com/KJV/Matthew17%3A21)
 [^Heb12:2]: [The Bible, Hebrews 12:2](https://www.bibleserver.com/KJV/Hebrews12%3A2)
