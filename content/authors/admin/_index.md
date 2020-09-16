@@ -93,4 +93,4 @@ Raphael Scheible is a computer scientist located at Freiburg im Breisgau in Germ
 
 In 2016 Raphael decided to accept Jesus Christ as his Lord and saviour and asked him to forgive all his sins. Consequently, he became a [born again Christian](https://en.wikipedia.org/wiki/Born_again#Evangelicalism). Now, he volunteers as a leader of a prayergroup at the local church [Christengemeinde Freiburg](https://cgfr.de). When he got born again and freed from the demons he was possessed of, his life changed dramatically for the better and he became a new person. Read more about it [here](jesus).
 
-Furthermore, I love hard music. Check out my [spotify playlist](https://open.spotify.com/playlist/1M61SvuPUWxTN7qPTvpA0P).
+Furthermore, he loves hard music. Check out my [spotify playlist](https://open.spotify.com/playlist/1M61SvuPUWxTN7qPTvpA0P).
