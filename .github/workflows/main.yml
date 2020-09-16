@@ -17,7 +17,7 @@ jobs:
       - name: Build Site
         uses: chabad360/hugo-gh-pages@master
         with:
-          githubToken: ${{ secrets.PERSONAL_TOKEN }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
           # Remember to set this as a secret (i.e. secrets.PERSONAL_TOKEN).
           # Don't forget to set the secret value in the project settings.
           cname: raphiniert.com # Or anything else
