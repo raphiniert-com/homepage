@@ -190,7 +190,7 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2020-12-08T15:21:50.985561Z'
+publishDate: '2020-12-08T15:33:48.523772Z'
 publication_types:
 - '2'
 abstract: 'Introduction: The German PID-NET registry was founded in 2009, serving
