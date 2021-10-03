@@ -26,7 +26,7 @@ jobs:
         run: hugo --gc --minify --cleanDestinationDir
 
       - name: Cleanup
-        run: find ./public/authors -maxdepth 1 ! -name admin ! -name . -exec rm -rv {} \;
+        run: cd ./public/authors && find . -maxdepth 1 ! -name admin ! -name . -exec rm -rv {} \;
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
