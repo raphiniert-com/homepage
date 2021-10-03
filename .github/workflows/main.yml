@@ -1,34 +1,37 @@
-name: Build Site
+name: github pages
 
 on:
   push:
     branches:
       - master
+  pull_request:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
+  deploy:
+    runs-on: ubuntu-20.04
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@master
+      - uses: actions/checkout@v2
         with:
-          submodules: true
-      - name: Build Site
-        uses: chabad360/hugo-gh-pages@master
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          # Remember to set this as a secret (i.e. secrets.PERSONAL_TOKEN).
-          # Don't forget to set the secret value in the project settings.
-          cname: raphiniert.com # Or anything else
-          # Use if you have a custom domain for your site.
-          #branch: master # Or anything else
-          # Use if your site is not hosted on the gh-pages branch.
-          #repo: you/you.github.io
-          # Use if your pushing to a different repo.
-          # Dont add ".git" to the end of the URL (youl'll get 404s).
-          hugoVersion: extended_0.58.3
-          # Use if your site requires a specific version of Hugo
-          # Append "extended_" to the begining to use Hugo Extended
-          args: --gc --minify --cleanDestinationDir
-          # Use if you want to pass some custom arguments to Hugo
+          hugo-version: 0.58.3
+          extended: true
+
+
+      - name: Build
+        run: hugo --gc --minify --cleanDestinationDir
+
+      - name: Cleanup
+        run: find ./public/authors -maxdepth 1 ! -name admin ! -name . -exec rm -rv {} \;
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/master'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          cname: raphiniert.com
