@@ -17,13 +17,32 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
+[[experience]]
+  title = "Computer Scientist"
+  company = "Institute for AI and Informatics in Medicine (AIIM)"
+  company_url = "https://www.imse.med.tum.de/de/institut-f%C3%BCr-ki-und-informatik-der-medizin-lehrstuhl-f%C3%BCr-medizinische-informatik"
+  location = "Munich"
+  date_start = "2021-04-01"
+  date_end = ""
+  description = """
+  Responsibilities include:
+  
+  * Research
+  * Medical Informatics
+  * Natural Language Processing
+  * Programming
+  * Databases
+  * Teaching
+  """
+
 [[experience]]
   title = "Computer Scientist"
   company = "Institute of Medical Biometry and Statistics (IMBI)"
   company_url = "https://www.imbi.uni-freiburg.de/"
   location = "Freiburg"
   date_start = "2019-03-01"
-  date_end = ""
+  date_end = "2021-11-14"
   description = """
   Responsibilities include:
   
@@ -40,12 +59,30 @@ date_format = "Jan 2006"
   company = "Center for Chronic Immunodeficiency (CCI)"
   company_url = "https://www.uniklinik-freiburg.de/cci.html"
   location = "Freiburg"
+  date_start = "2019-10-01"
+  date_end = ""
+  description = """
+  Responsibilities include:
+  
+  * [ESID registry](https://esid.org/Working-Parties/Registry-Working-Party/ESID-Registry)
+  * [AL-PID](https://www.uniklinik-freiburg.de/cci/forschung/stephan-ehl/forschungsgebiete/al-pid.html)
+  * Databases 
+  * Programming
+  * Research
+  """
+
+[[experience]]
+  title = "Computer Scientist"
+  company = "Center for Chronic Immunodeficiency (CCI)"
+  company_url = "https://www.uniklinik-freiburg.de/cci.html"
+  location = "Freiburg"
   date_start = "2015-11-01"
   date_end = "2019-02-28"
   description = """
   Responsibilities include:
   
   * [ESID registry](https://esid.org/Working-Parties/Registry-Working-Party/ESID-Registry)
+  * [AL-PID](https://www.uniklinik-freiburg.de/cci/forschung/stephan-ehl/forschungsgebiete/al-pid.html)
   * Research
   * Programming
   * Databases

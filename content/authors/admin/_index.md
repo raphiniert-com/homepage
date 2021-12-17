@@ -89,7 +89,8 @@ user_groups:
 - Visitors
 ---
 
-Raphael Scheible is a computer scientist located at Freiburg im Breisgau in Germany. His research interests include medical computer science, natural language processing and medical imaging. He works at the Institute of Medical Biometry and Statistics (IMBI) at the Albert-Ludwigs-Universität Freiburg, which is part of the [MIRACUM project](https://miracum.org).
+Raphael Scheible is a computer scientist located at Freiburg im Breisgau in Germany. His research interests include medical computer science, natural language processing and medical imaging. He currently works at the Institute for AI and Informatics in Medicine (AIIM) at the The University Hospital
+Klinikum rechts der Isar of the Technical University of Munich, which is part of the [DIFUTURE project](https://difuture.de).
 
 In 2016 Raphael decided to accept Jesus Christ as his Lord and saviour and asked him to forgive all his sins. Consequently, he became a [born again Christian](https://en.wikipedia.org/wiki/Born_again#Evangelicalism). Now, he volunteers as a leader of a prayergroup at the local church [Christengemeinde Freiburg](https://cgfr.de). When he got born again and freed from the demons he was possessed of, his life changed dramatically for the better and he became a new person. Read more about it [here](jesus).
 
