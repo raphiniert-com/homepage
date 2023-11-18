@@ -64,7 +64,7 @@ social:
   link: https://scholar.google.com/citations?hl=en&user=gQ2pZf8AAAAJ
 - icon: publons
   icon_pack: ai
-  link: https://publons.com/researcher/2973216/raphael-scheible
+  link: https://www.webofscience.com/wos/author/record/R-1731-2019
 - icon: github
   icon_pack: fab
   link: https://github.com/scheiblr
