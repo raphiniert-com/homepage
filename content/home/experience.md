@@ -60,7 +60,7 @@ date_format = "Jan 2006"
   company_url = "https://www.uniklinik-freiburg.de/cci.html"
   location = "Freiburg"
   date_start = "2019-10-01"
-  date_end = ""
+  date_end = "2023-11-30"
   description = """
   Responsibilities include:
   
