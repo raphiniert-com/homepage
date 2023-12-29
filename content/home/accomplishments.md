@@ -37,7 +37,7 @@ date_format = "Jan 2006"
   date_start = "2010-01-22"
   date_end = ""
   description = ""
-  
+
 [[item]]
   organization = "PADI: Professional Association of Diving Instructors"
   organization_url = "https://www.padi.com"
@@ -45,6 +45,26 @@ date_format = "Jan 2006"
   url = "https://www.padi.com/courses/open-water-diver"
   # certificate_url = "https://www.coursera.org"
   date_start = "2013-08-01"
+  date_end = ""
+  description = ""
+
+[[item]]
+  organization = "Bundeswehr"
+  organization_url = "https://www.bundeswehr.de/en/"
+  title = "Successful participation in the qualifying examinations for the career as an officer in the Bundeswehr"
+  url = ""
+  # certificate_url = "https://www.coursera.org"
+  date_start = "2006-01-01"
+  date_end = ""
+  description = ""
+
+[[item]]
+  organization = "Christengemeinde Freiburg"
+  organization_url = "https://www.cgfr.de"
+  title = "Successful completion of the CGFR leadership schoo"
+  url = ""
+  # certificate_url = "https://www.coursera.org"
+  date_start = "2016-06-01"
   date_end = ""
   description = ""
 +++

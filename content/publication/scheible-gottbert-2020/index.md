@@ -1,41 +1,15 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
 title: 'GottBERT: a pure German Language Model'
-subtitle: ''
-summary: ''
 authors:
 - Raphael Scheible
 - Fabian Thomczyk
 - Patric Tippmann
 - Victor Jaravine
 - Martin Boeker
-tags:
-- '"Computer Science - Computation and Language"'
-- '"Computer Science - Machine Learning"'
-categories: []
 date: '2020-12-03'
-lastmod: 2020-12-08T16:21:50+01:00
-featured: false
-draft: false
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
-publishDate: '2020-12-08T15:33:47.904218Z'
+publishDate: '2023-12-29T21:27:16.973674Z'
 publication_types:
-- '2'
+- 3
 abstract: Lately, pre-trained language models advanced the field of natural language
   processing (NLP). The introduction of Bidirectional Encoders for Transformers (BERT)
   and its optimized version RoBERTa have had significant impact and increased the
@@ -55,6 +29,11 @@ abstract: Lately, pre-trained language models advanced the field of natural lang
   hyper-parameter optimization, in all NER and one text classification task, GottBERT
   already outperformed all other tested German and multilingual models. In order to
   support the German NLP field, we publish GottBERT under the AGPLv3 license.
-publication: ''
-url_pdf: http://arxiv.org/abs/2012.02110
+tags:
+- Computer Science - Computation and Language
+- Computer Science - Machine Learning
+featured: true
+links:
+- name: URL
+  url: http://arxiv.org/abs/2012.02110
 ---

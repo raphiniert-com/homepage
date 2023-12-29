@@ -1,11 +1,7 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
 title: 'Enabling External Inquiries to an Existing Patient Registry by Using the Open
   Source Registry System for Rare Diseases: Demonstration of the System Using the
   European Society for Immunodeficiencies Registry'
-subtitle: ''
-summary: ''
 authors:
 - Raphael Scheible
 - Dennis Kadioglu
@@ -20,30 +16,11 @@ authors:
 - Stephan Rusch
 - Gerhard Kindle
 - Holger Storf
-tags: []
-categories: []
 date: '2020-01-01'
-lastmod: 2020-12-08T16:21:50+01:00
-featured: false
-draft: false
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
-publishDate: '2020-12-08T15:33:48.054508Z'
+publishDate: '2023-12-29T21:27:16.994100Z'
 publication_types:
-- '2'
+- 2
+doi: 10.2196/17420
 abstract: 'Background:  The German Network on Primary Immunodeficiency Diseases (PID-NET)
   utilizes the European Society for Immunodeficiencies (ESID) registry as a platform
   for collecting data. In the context of PID-NET data, we show how registries based
@@ -79,7 +56,8 @@ abstract: 'Background:  The German Network on Primary Immunodeficiency Diseases 
   of the decentralized search is uncomplicated to use and offers a well-structured,
   yet still improvable, graphical user interface to formulate queries. [JMIR Med Inform
   2020;8(10):e17420]'
-publication: ''
-url_pdf: https://medinform.jmir.org/2020/10/e17420/
-doi: 10.2196/17420
+featured: true
+links:
+- name: URL
+  url: https://medinform.jmir.org/2020/10/e17420/
 ---

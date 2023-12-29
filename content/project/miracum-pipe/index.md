@@ -3,7 +3,7 @@
 
 title: "Miracum Pipe"
 summary: "Whole exome sequencing pipeline including advanced variant annotation features and automated PDF reporting."
-authors: [admin]
+# authors: [admin]
 tags: [Bioinformatics, Genetic Sequencing]
 categories: [Bioinformatics]
 date: 2019-12-28T18:51:19+01:00
