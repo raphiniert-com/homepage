@@ -62,7 +62,7 @@ For my yoke is easy, and my burden is light.
 &lt;li id=&#34;fn:Mat11-28-30&#34;&gt;&lt;a href=&#34;https://www.bibleserver.com/KJV/Matthew11%3A28-30&#34; target=&#34;_blank&#34;&gt;The Bible, Matthew 11:28-13&lt;/a&gt;
 &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Mat11-28-30&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description></item><item><title>Miracum Pipe</title><link>https://raphiniert.com/project/miracum-pipe/</link><pubDate>Sat, 28 Dec 2019 18:51:19 +0100</pubDate><guid>https://raphiniert.com/project/miracum-pipe/</guid><description/></item><item><title>Volume Renderer for use with MATLAB®</title><link>https://raphiniert.com/project/volume-renderer/</link><pubDate>Sat, 14 Jul 2012 17:09:58 +0100</pubDate><guid>https://raphiniert.com/project/volume-renderer/</guid><description>
+&lt;/div&gt;</description></item><item><title>Volume Renderer for use with MATLAB®</title><link>https://raphiniert.com/project/volume-renderer/</link><pubDate>Sat, 14 Jul 2012 17:09:58 +0100</pubDate><guid>https://raphiniert.com/project/volume-renderer/</guid><description>
 &lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Volume Renderer for use with MATLAB®&lt;/em&gt; extends MATLAB® by a GPU-accelerated volume render command that handles 3D volumetric data. The core application is implemented in C/C++. To guarantee fast computations the render process computes on the GPU. This is realized by NVIDIA® CUDA®. Furthermore &lt;em&gt;Volume Renderer &lt;small&gt;for use with MATLAB®&lt;/small&gt;&lt;/em&gt; provides the following features:&lt;/p&gt;
 &lt;ul&gt;
