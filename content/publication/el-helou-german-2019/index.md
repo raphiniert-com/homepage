@@ -1,9 +1,5 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
 title: The German National Registry of Primary Immunodeficiencies (2012–2017)
-subtitle: ''
-summary: ''
 authors:
 - Sabine M. El-Helou
 - Anika-Kerstin Biegner
@@ -155,71 +151,13 @@ authors:
 - Veronika Soetedjo
 - Gerhard Kindle
 - Bodo Grimbacher
-tags:
-- '"Primary immunodeficiency (PID)"'
-- '"clinical online database"'
-- '"CVID"'
-- '"ESID"'
-- '"European Society for Immunodeficiencies"'
-- '"gene therapy in PID"'
-- '"German PID-NET registry"'
-- '"HSCT = hematopoietic stem cell transplant"'
-- '"HSCT in PID"'
-- '"IgG substitution therapy"'
-- '"Immune System"'
-- '"PID prevalence"'
-- '"Prevalance"'
-- '"registry for primary immunodeficiency"'
-categories: []
 date: '2019-01-01'
-lastmod: 2020-12-08T16:21:51+01:00
-featured: false
-draft: false
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
-publishDate: '2020-12-08T15:33:48.523772Z'
+publishDate: '2023-12-29T21:10:06.726428Z'
 publication_types:
-- '2'
-abstract: 'Introduction: The German PID-NET registry was founded in 2009, serving
-  as the first national registry of patients with primary immunodeficiencies (PID)
-  in Germany. It is part of the European Society for Immunodeficiencies (ESID) registry.
-  The primary purpose of the registry is to gather data on the epidemiology, diagnostic
-  delay, diagnosis, and treatment of PIDs. Methods: Clinical and laboratory data was
-  collected from 2,453 patients from 36 German PID centres in an online registry.
-  Data was analysed with the software Stata® and Excel. Results: The minimum prevalence
-  of PID in Germany is 2.72 per 100,000 inhabitants. Among patients aged 1 to 25,
-  there was a clear predominance of males. The median age of living patients ranged
-  between 7 and 40 years, depending on the respective PID. Predominantly antibody
-  disorders were the most prevalent group with 57% of all 2,453 PID patients had (including
-  728 CVID patients). A gene defect was identified in 36% of patients. Familial cases
-  were observed in 21% of patients. The age of onset for presenting symptoms ranged
-  from birth to late adulthood (range 0 - 88 years). Presenting symptoms comprised
-  infections (74%) and immune dysregulation (22%). Ninety-three patients were diagnosed
-  without prior clinical symptoms. Regarding the general and clinical diagnostic delay,
-  only severe combined immunodeficiency (SCID) had undergone a slight decrease within
-  the last decade. However, both, SCID and hyper IgE- syndrome showed a substantial
-  improvement in shortening the time between onset of symptoms and genetic diagnosis.
-  Regarding treatment, 49 % of all patients received immunoglobulin G (IgG) substitution
-  (70% - subcutaneous; 29% - intravenous; 1% - unknown). Three-hundred patients underwent
-  at least one hematopoietic stem cell transplantation (HSCT). Five patients had gene
-  therapy. Conclusion: The German PID-NET registry is a precious tool for physicians,
-  researchers, the pharmaceutical industry, politicians, and ultimately the patients,
-  for whom the outcomes will eventually lead to a more timely diagnosis and better
-  treatment.'
+- 2
 publication: '*Frontiers in Immunology*'
-url_pdf: https://www.frontiersin.org/articles/10.3389/fimmu.2019.01272/full
 doi: 10.3389/fimmu.2019.01272
+links:
+- name: URL
+  url: https://www.frontiersin.org/article/10.3389/fimmu.2019.01272
 ---
