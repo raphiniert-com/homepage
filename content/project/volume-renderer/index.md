@@ -6,7 +6,7 @@ categories: [Software]
 date: "2024"
 
 # Optional external URL for project (replaces project detail page).
-external_link: https://github.com/raphiniert-com/homepage
+external_link: https://github.com/raphiniert-com/volume_renderer
 
 image:
   caption: GitHub project page
