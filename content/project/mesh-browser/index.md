@@ -1,6 +1,6 @@
 ---
 title: "MeSH-Browser"
-summary: "A lightweight, API-driven MeSH exploration tool built with PostgREST and React-Admin, designed to provide a simple and accessible German-language interface for hierarchical MeSH navigation."
+summary: "A lightweight, API-driven MeSH explorer using PostgREST and React-Admin, offering a simple English and German interface for hierarchical navigation."
 tags:
   - Search and IR
   - Medical NLP

@@ -1,6 +1,6 @@
 ---
 title: "AL-PID Registry"
-summary: "A clinically driven registry project built on top of a legacy Access database, redesigned with a custom UI, modular plausibility logic, and an export pipeline that enabled a publication in The Lancet Haematology."
+summary: "A clinically driven registry rebuilt from a legacy Access database with a custom UI, modular plausibility logic, and an export pipeline."
 tags:
   - Clinical Registries
   - Medical Informatics

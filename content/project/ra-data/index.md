@@ -1,6 +1,6 @@
 ---
 title: "React Admin Data Providers"
-summary: "A set of reusable React Admin data providers for PostgREST and FHIR, developed to streamline UI development for clinical and research applications."
+summary: "A set of reusable React Admin data providers for PostgREST and FHIR, developed to streamline UI development."
 tags:
   - Featured
   - Medical Informatics
