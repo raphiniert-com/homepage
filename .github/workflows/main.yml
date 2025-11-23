@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   deploy:
-    runs-on: ubuntu:24:04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -40,6 +40,11 @@ jobs:
 
       - name: Build site
         run: hugo --gc --minify --cleanDestinationDir
+
+      - name: Show `public` output for debugging
+        run: |
+          echo "public exists: $( [ -d public ] && echo yes || echo no )"
+          ls -la public || true
 
       - name: Cleanup (optional)
         run: rm -rf ./public/authors && rm -rf ./public/categories && rm -rf ./public/publication_types
