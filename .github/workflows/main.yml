@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'            # matches environment.yml nodejs=20.*
-          cache: 'yarn'
+          cache: 'npm'
 
       - name: Install npm/yarn deps
         run: npm ci
