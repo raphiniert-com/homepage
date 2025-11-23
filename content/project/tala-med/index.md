@@ -31,7 +31,7 @@ With this in mind we designed a new technology platform that offered full contro
 
 A second major building block was the crawler. The original Fess setup lacked the flexibility and transparency needed for large scale, domain controlled crawling. We migrated to a custom adapted version of Apache Nutch, which became the basis of a student project that later resulted in a peer reviewed MIE 2025 publication. Together, the new retrieval platform and the improved crawler formed a modern, maintainable and fully open architecture for tala-med.
 
-Both contributions were completed during my time in Munich. Since moving back to Freiburg I have continued to work on tala-med and we are currently deploying the new platform to updated servers. The goal is to replace the old prototype implementation in late 2025 or early 2026 with the fully redesigned architecture.
+Both contributions were completed during the earlier development phase. I have since continued to work on tala-med, and we are currently preparing the deployment of the new platform to updated servers. The goal is to replace the old prototype implementation in late 2025 or early 2026 with the fully redesigned architecture.
 
 tala-med is now a fully re-engineered medical search engine with an open, extensible infrastructure, modern crawling, synonym expansion, and a retrieval pipeline that can be adapted to new NLP methods as needed. What started as a constrained prototype has now matured into a flexible research and production environment backed by multiple publications and several years of iterative development.
 

@@ -10,6 +10,14 @@ subtitle = "Previous roles that shaped my professional expertise"
 date_format = "Jan 2006"
 
 [[experience]]
+  title = "AI & NLP Specialist"
+  company = "University Medical Center Freiburg"
+  location = "Germany"
+  date_start = "2025-07-01"
+  date_end = ""
+  description = """Applied NLP, medical information retrieval, and AI infrastructure development."""
+
+[[experience]]
   title = "Over-consortial NLP Lead"
   company = "MIRACUM & DIFUTURE"
   location = "Germany"
