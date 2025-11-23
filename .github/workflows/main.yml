@@ -28,7 +28,18 @@ jobs:
 
       - name: Install npm/yarn deps
         run: |
-          yarn install --frozen-lockfile || npm ci
+          # Prefer reproducible installs when a lockfile is present.
+          if [ -f yarn.lock ]; then
+            echo "Found yarn.lock — running 'yarn install --frozen-lockfile'"
+            yarn install --frozen-lockfile
+          elif [ -f package-lock.json ]; then
+            echo "Found package-lock.json — running 'npm ci'"
+            npm ci
+          else
+            echo "No lockfile found — running 'yarn install' (non-reproducible)"
+            yarn install
+          fi
+          # Run project-setup if it exists; don't fail the job if it errors.
           yarn project-setup || true
         # if you prefer npm, replace with npm ci && npm run project-setup
 
