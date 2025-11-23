@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web Development on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</title><link>/tags/web-development/</link><description>Recent content in Web Development on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright &amp;copy; {year}</copyright><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/web-development/index.xml" rel="self" type="application/rss+xml"/><item><title>React Admin Data Providers</title><link>/project/ra-data/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>/project/ra-data/</guid><description>&lt;h2 id="react-admin-data-providers-for-clinical-apis--postgrest-and-fhir">React Admin Data Providers for Clinical APIs – PostgREST and FHIR&lt;/h2>
+&lt;p>The development of my React Admin data providers began with the MeSH Browser project. At that time, I needed a flexible way to connect a React Admin frontend to a PostgREST backend without manually wiring every query, filter and pagination step. Early community work provided some inspiration, but no complete implementation existed. This led to the first version of the PostgREST data provider, which gradually grew into a fully featured library which is widely used (&amp;gt;2k downloads/week).&lt;/p>
+&lt;p>Over time, the project evolved far beyond its original prototype. We added a dedicated test framework, introduced structured configuration, and turned it into a generic ecosystem that makes it easy to build React Admin frontends on top of Postgres. A demo setup was created to showcase multiple PostgreSQL FDWs together with PostgREST, illustrating how flexible the architecture can be when connecting diverse data sources. For authentication and authorization, the system integrates cleanly with Keycloak.&lt;/p>
+&lt;p>The second data provider emerged in a similar way. As part of a student project, we built a FHIR REST data provider for React Admin. Its goal was to simplify building clinical user interfaces directly on top of FHIR servers. The data provider implements FHIR search, pagination, resource handling and bundle interpretation, and was tested against the LinuxForHealth (formerly IBM) FHIR Server. Together with a small demo application, this demonstrated how React Admin can be used as a lightweight tool for building FHIR based administrative interfaces. The project resulted in a peer reviewed conference publication at ICIMTH.&lt;/p>
+&lt;p>Together, these two libraries form a small but valuable toolkit that connects modern React based user interfaces with established clinical APIs. Whether through PostgREST or FHIR, both data providers lower the barrier for creating custom user interfaces in clinical or research environments by offering reliable, clean and reusable integrations that work out of the box.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;h3 id="postgrest-data-provider">PostgREST Data Provider&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Journal Publication (Software Impacts, 2024):&lt;/strong>&lt;br>
+&lt;a href="https://www.sciencedirect.com/science/article/pii/S2665963824000873">https://www.sciencedirect.com/science/article/pii/S2665963824000873&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>NPM Package:&lt;/strong>&lt;br>
+&lt;a href="https://www.npmjs.com/package/@raphiniert/ra-data-postgrest">https://www.npmjs.com/package/@raphiniert/ra-data-postgrest&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>GitHub Repository:&lt;/strong>&lt;br>
+&lt;a href="https://github.com/raphiniert-com/ra-data-postgrest">https://github.com/raphiniert-com/ra-data-postgrest&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Demo Repository:&lt;/strong>&lt;br>
+&lt;a href="https://github.com/raphiniert-com/ra-data-postgrest-demo">https://github.com/raphiniert-com/ra-data-postgrest-demo&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="fhir-data-provider">FHIR Data Provider&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Conference Publication (ICIMTH 2023):&lt;/strong>&lt;br>
+&lt;a href="https://doi.org/10.3233/SHTI230436">https://doi.org/10.3233/SHTI230436&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>GitLab Repository:&lt;/strong>&lt;br>
+&lt;a href="https://gitlab.com/mri-tum/aiim/libs/ra-data-fhir">https://gitlab.com/mri-tum/aiim/libs/ra-data-fhir&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>NPM Package:&lt;/strong>&lt;br>
+&lt;a href="https://www.npmjs.com/package/@tum-mri-aiim/ra-data-fhir">https://www.npmjs.com/package/@tum-mri-aiim/ra-data-fhir&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Porzellanland Schmitt GmbH</title><link>/project/porzellanland/</link><pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate><guid>/project/porzellanland/</guid><description>&lt;h2 id="porzellanland-schmitt-gmbh--a-family-business-shaped-by-early-digital-entrepreneurship">Porzellanland Schmitt GmbH – A Family Business Shaped by Early Digital Entrepreneurship&lt;/h2>
+&lt;p>My involvement with Porzellanland began long before my academic career. As a highschool student, I accompanied my parents when they started a porcelain trading business. The seed for the business was planted in a simple everyday situation: my grandmother needed a single replacement cup from a discontinued porcelain series. My mother complained that sellers only offered complete sets. I spontaneously suggested, &amp;ldquo;Then buy the whole set, gift the parts you need, and sell the rest with profit.&amp;rdquo; That idea became the initial spark for what later grew into a full busieness.&lt;/p>
+&lt;p>Very early, I became responsible for the technical backbone of the business. I set up the first online shop using osCommerce, including server installation, configuration, and the complete infrastructure needed for a functioning e-commerce platform. The limitations of osCommerce, combined with the flexibility of its open source structure and documentation, motivated me to build a fully custom shop system as part of my Abitur project. This system ran successfully for several years and formed the operational foundation of the business during its early growth.&lt;/p>
+&lt;p>During my master&amp;rsquo;s studies, I migrated the shop to Magento Open Source and developed custom modules, including region-based shipping calculations and a LaTeX based PDF invoice generator. Later, the business transitioned to Shopify, where the shop continued to evolve without my direct involvement.&lt;/p>
+&lt;p>Beyond the technical aspects, I also contributed to shaping the brand identity. The name Porzellanland, the domain, and the original logo were all created in collaboration with me. Over the years, the company became one of the largest specialized dealers for discontinued branded porcelain, shipping internationally and serving a niche market with high reliability.&lt;/p>
+&lt;p>Today, the business is in its final chapter and planned to be dissolved at the end of the year 2025. Yet Porzellanland remains an important part of my personal and entrepreneurial story, a place where I learned early how technology, design, and business can work together, long before I entered the academic world.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Porzellanland Website:&lt;/strong>&lt;br>
+&lt;a href="https://porzellanland.de">https://porzellanland.de&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

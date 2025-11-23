@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Medical NLP on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</title><link>/tags/medical-nlp/</link><description>Recent content in Medical NLP on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright &amp;copy; {year}</copyright><lastBuildDate>Thu, 18 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/medical-nlp/index.xml" rel="self" type="application/rss+xml"/><item><title>ChristBERT</title><link>/project/christbert/</link><pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate><guid>/project/christbert/</guid><description>&lt;h2 id="building-a-medical-german-language-model-against-the-odds">Building a Medical German Language Model Against the Odds&lt;/h2>
+&lt;p>ChristBERT was developed as part of my Master’s thesis and focuses on domain-specific German clinical language modeling. The project investigated two complementary strategies: continued pre-training on top of GottBERT/GeistBERT, and training from scratch using both a general-purpose RoBERTa tokenizer and a specialized medical vocabulary. This enabled a systematic comparison between general, domain-adapted, and fully specialized pre-training pipelines for German medical NLP.&lt;/p>
+&lt;p>During the early conceptual phase, the supervision structure of the thesis changed, and the project was reassigned to a new advisor, who later became the supervisor of my doctoral work. ChristBERT was trained using a combination of compute resources: through an existing project partnership, parts of the full pre-training were executed on the Augsburg compute cluster, while downstream evaluations, and parts of the translation workflows ran on privately built GPU hardware in my basement.&lt;/p>
+&lt;p>ChristBERT showed that continued pre-training on German clinical text offers measurable improvements over general-purpose RoBERTa models, while training from scratch with a medical-specific tokenizer provides additional insights into domain vocabulary specialization and its trade-offs.&lt;/p>
+&lt;p>The work has been released as a preprint and is currently under review at BMC Medical Informatics and Decision Making.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Preprint (2025):&lt;/strong>&lt;br>
+&lt;a href="https://www.researchsquare.com/article/rs-7332811/v1">https://www.researchsquare.com/article/rs-7332811/v1&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
+&lt;a href="https://huggingface.co/ChristBERT">https://huggingface.co/ChristBERT&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>MeSH-Browser</title><link>/project/mesh-browser/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>/project/mesh-browser/</guid><description>&lt;h2 id="exploring-mesh-through-modern-search-postgrest-react-admin-and-elasticsearch">Exploring MeSH Through Modern Search: PostgREST, React-Admin, and Elasticsearch&lt;/h2>
+&lt;p>The MeSH-Browser originated from a very practical problem: German-speaking editorial teams had no usable interface to explore or apply MeSH terms. The initial motivation came from Cochrane Germany, who needed a tool to support the “Wissen Was Wirkt” blog in assigning German-language tags and categories based on the MeSH vocabulary. At the time, no low-threshold, German-friendly MeSH interface existed. DIMDI provided a German MeSH dataset, but it was difficult to use for anyone without technical expertise, and existing tools were either outdated, incomplete, or too complex for non-technical users. This gap led to the development of the MeSH-Browser.&lt;/p>
+&lt;p>The project was strongly shaped by my earlier experience with API-driven designs from ESID. We built a clean PostgREST API layer on top of a PostgreSQL database and implemented the frontend using React-Admin. To support fast and flexible search, the system integrated PostgreSQL full-text capabilities through ZomboDB and Elasticsearch, enabling instant query responses across the hierarchical MeSH vocabulary. This technical foundation proved exceptionally effective: fast to build, easy to extend, and well suited for structured biomedical terminologies. In fact, the MeSH-Browser was the starting point for the dedicated PostgREST DataProvider project, which grew out of the architectural choices made here.&lt;/p>
+&lt;p>Two highly capable Life-Science informatics students joined the development, helping deliver the browser as part of a focused project module. One of them subsequently completed his bachelor thesis on the system, comparing our browser to the official NLM version. In this small user study, our tool performed better in terms of accessibility and ease of use. This confirmed that the technical choices, PostgREST for the API, React-Admin for the UI, and ZomboDB/Elasticsearch for fast search, enabled a development process that was manageable even for junior developers, while still producing a tool that worked intuitively for non-technical end users.&lt;/p>
+&lt;p>The usability study, published as part of a peer-reviewed contribution, reinforced these findings and even with minimal hardware resources, the browser remained highly performant: the live system still runs smoothly on a VM with only 1 vCPU and 2 GB RAM, demonstrating the efficiency of the underlying architecture.&lt;/p>
+&lt;p>The MeSH-Browser ultimately filled a real and long-standing gap by offering Germany’s biomedical and health communication community a simple, robust, search-driven, and accessible way to explore MeSH terms — something that had never existed in this form before.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>MeSH-Browser (Live System):&lt;/strong>&lt;br>
+&lt;a href="https://mesh-browser.de">https://mesh-browser.de&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Technical Publication (2021):&lt;/strong>&lt;br>
+&lt;a href="https://ebooks.iospress.nl/doi/10.3233/SHTI210939">https://ebooks.iospress.nl/doi/10.3233/SHTI210939&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Usability Study (2022):&lt;/strong>&lt;br>
+&lt;a href="https://ebooks.iospress.nl/doi/10.3233/SHTI220653">https://ebooks.iospress.nl/doi/10.3233/SHTI220653&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>tala-med Search Engine</title><link>/project/tala-med/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>/project/tala-med/</guid><description>&lt;h2 id="tala-med-search--engineering-a-medical-search-engine-from-prototype-to-modern-ir-platform">tala-med search – Engineering a Medical Search Engine from Prototype to Modern IR Platform&lt;/h2>
+&lt;p>The tala-med search engine began in 2019 as a GAP funded project. I joined initially as technical support, but after a colleague left the team I took over the development lead and guided the system through several difficult phases into a working prototype that could be evaluated scientifically. The early version of tala-med used a React interface based on design drafts created by a graphic designer in the group. On the backend, we used AppSearch together with the Fess crawler. This setup was sufficient for the first prototype and for the first evaluation, but it became clear that the closed ecosystem limited our flexibility, especially regarding custom NLP components and extensible retrieval pipelines.&lt;/p>
+&lt;p>With this in mind we designed a new technology platform that offered full control over indexing, querying, scoring and synonym handling. The architecture was inspired by the experience gained with the MeSH-Browser and built on top of the subZero stack. As a student project we developed a synonym expansion component using a FastText based approach, and even managed to outperform the previous solution in speed. This work resulted in a journal publication documenting the new retrieval platform and its technical design.&lt;/p>
+&lt;p>A second major building block was the crawler. The original Fess setup lacked the flexibility and transparency needed for large scale, domain controlled crawling. We migrated to a custom adapted version of Apache Nutch, which became the basis of a student project that later resulted in a peer reviewed MIE 2025 publication. Together, the new retrieval platform and the improved crawler formed a modern, maintainable and fully open architecture for tala-med.&lt;/p>
+&lt;p>Both contributions were completed during the earlier development phase. I have since continued to work on tala-med, and we are currently preparing the deployment of the new platform to updated servers. The goal is to replace the old prototype implementation in late 2025 or early 2026 with the fully redesigned architecture.&lt;/p>
+&lt;p>tala-med is now a fully re-engineered medical search engine with an open, extensible infrastructure, modern crawling, synonym expansion, and a retrieval pipeline that can be adapted to new NLP methods as needed. What started as a constrained prototype has now matured into a flexible research and production environment backed by multiple publications and several years of iterative development.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Live Search Instance:&lt;/strong>&lt;br>
+&lt;a href="https://suche.tala-med.info">https://suche.tala-med.info&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Source Code (Search Platform Repository):&lt;/strong>&lt;br>
+&lt;a href="https://gitlab.com/tala-med/search-platform">https://gitlab.com/tala-med/search-platform&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Prototype and Human Factors Evaluation (JMIR Human Factors, 2025):&lt;/strong>&lt;br>
+&lt;a href="https://humanfactors.jmir.org/2025/1/e56941/">https://humanfactors.jmir.org/2025/1/e56941/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Technical Improvement and Synonym Expansion (Health Informatics Journal, 2025):&lt;/strong>&lt;br>
+&lt;a href="https://journals.sagepub.com/doi/full/10.1177/14604582251381271">https://journals.sagepub.com/doi/full/10.1177/14604582251381271&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom Apache Nutch Crawler (MIE 2025):&lt;/strong>&lt;br>
+&lt;a href="https://ebooks.iospress.nl/doi/10.3233/SHTI250423">https://ebooks.iospress.nl/doi/10.3233/SHTI250423&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

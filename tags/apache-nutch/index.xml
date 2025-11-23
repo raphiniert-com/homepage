@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Nutch on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</title><link>/tags/apache-nutch/</link><description>Recent content in Apache Nutch on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright &amp;copy; {year}</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/apache-nutch/index.xml" rel="self" type="application/rss+xml"/><item><title>tala-med Search Engine</title><link>/project/tala-med/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>/project/tala-med/</guid><description>&lt;h2 id="tala-med-search--engineering-a-medical-search-engine-from-prototype-to-modern-ir-platform">tala-med search – Engineering a Medical Search Engine from Prototype to Modern IR Platform&lt;/h2>
+&lt;p>The tala-med search engine began in 2019 as a GAP funded project. I joined initially as technical support, but after a colleague left the team I took over the development lead and guided the system through several difficult phases into a working prototype that could be evaluated scientifically. The early version of tala-med used a React interface based on design drafts created by a graphic designer in the group. On the backend, we used AppSearch together with the Fess crawler. This setup was sufficient for the first prototype and for the first evaluation, but it became clear that the closed ecosystem limited our flexibility, especially regarding custom NLP components and extensible retrieval pipelines.&lt;/p>
+&lt;p>With this in mind we designed a new technology platform that offered full control over indexing, querying, scoring and synonym handling. The architecture was inspired by the experience gained with the MeSH-Browser and built on top of the subZero stack. As a student project we developed a synonym expansion component using a FastText based approach, and even managed to outperform the previous solution in speed. This work resulted in a journal publication documenting the new retrieval platform and its technical design.&lt;/p>
+&lt;p>A second major building block was the crawler. The original Fess setup lacked the flexibility and transparency needed for large scale, domain controlled crawling. We migrated to a custom adapted version of Apache Nutch, which became the basis of a student project that later resulted in a peer reviewed MIE 2025 publication. Together, the new retrieval platform and the improved crawler formed a modern, maintainable and fully open architecture for tala-med.&lt;/p>
+&lt;p>Both contributions were completed during the earlier development phase. I have since continued to work on tala-med, and we are currently preparing the deployment of the new platform to updated servers. The goal is to replace the old prototype implementation in late 2025 or early 2026 with the fully redesigned architecture.&lt;/p>
+&lt;p>tala-med is now a fully re-engineered medical search engine with an open, extensible infrastructure, modern crawling, synonym expansion, and a retrieval pipeline that can be adapted to new NLP methods as needed. What started as a constrained prototype has now matured into a flexible research and production environment backed by multiple publications and several years of iterative development.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Live Search Instance:&lt;/strong>&lt;br>
+&lt;a href="https://suche.tala-med.info">https://suche.tala-med.info&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Source Code (Search Platform Repository):&lt;/strong>&lt;br>
+&lt;a href="https://gitlab.com/tala-med/search-platform">https://gitlab.com/tala-med/search-platform&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Prototype and Human Factors Evaluation (JMIR Human Factors, 2025):&lt;/strong>&lt;br>
+&lt;a href="https://humanfactors.jmir.org/2025/1/e56941/">https://humanfactors.jmir.org/2025/1/e56941/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Technical Improvement and Synonym Expansion (Health Informatics Journal, 2025):&lt;/strong>&lt;br>
+&lt;a href="https://journals.sagepub.com/doi/full/10.1177/14604582251381271">https://journals.sagepub.com/doi/full/10.1177/14604582251381271&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom Apache Nutch Crawler (MIE 2025):&lt;/strong>&lt;br>
+&lt;a href="https://ebooks.iospress.nl/doi/10.3233/SHTI250423">https://ebooks.iospress.nl/doi/10.3233/SHTI250423&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

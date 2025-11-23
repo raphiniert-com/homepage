@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Medical Informatics on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</title><link>/tags/medical-informatics/</link><description>Recent content in Medical Informatics on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright &amp;copy; {year}</copyright><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/medical-informatics/index.xml" rel="self" type="application/rss+xml"/><item><title>i2b2RLS</title><link>/project/i2b2rls/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><guid>/project/i2b2rls/</guid><description>&lt;h2 id="i2b2rls--fine-grained-access-control-for-clinical-data-warehouses">i2b2RLS – Fine-Grained Access Control for Clinical Data Warehouses&lt;/h2>
+&lt;p>The idea for i2b2RLS emerged in 2019 when I joined the IMBI team in Freiburg. With my experience from the ESID reporting infrastructure, it became clear that a comparable, policy-driven access-control layer could meaningfully strengthen the security architecture of our local i2b2 installation. The goal was to take the central i2b2 instance at the Freiburg Data Integration Center and deploy it with true row-level access control using PostgreSQL RLS, a level of fine-grained authorization that i2b2 did not support out of the box.&lt;/p>
+&lt;p>Achieving this required modifications on two layers: adapting parts of the i2b2 stack itself, and developing a consistent workflow to generate, validate, and deploy PostgreSQL RLS policies. To evaluate feasibility, we created a synthetic dataset and measured RLS performance under realistic i2b2 query patterns. In the course of this work we also conducted, to our knowledge, the first systematic performance benchmark evaluating PostgreSQL Row-Level Security in the context of a clinical research data warehouse. Using the synthetic data and representative query structures, we demonstrated that a carefully designed policy architecture can be deployed in production settings with acceptable overhead.&lt;/p>
+&lt;p>To make the system maintainable and reproducible, we implemented a Python-based deployment tool that automated the generation and installation of RLS policy sets. The tool incorporates pgTAP tests to reduce the risk of deploying faulty or incomplete policies, a critical safeguard for hospital-grade access control. We released the tool as open source on PyPI, making it easy for other institutions to adopt similar security layers.&lt;/p>
+&lt;p>For easier setup, we also created a Docker-based i2b2 stack that includes all required components for RLS deployment, significantly lowering the barrier for testing or adopting this approach in other environments.&lt;/p>
+&lt;p>The project ultimately resulted in a JAMIA Open publication, documenting the architecture, performance evaluation, and practical deployment considerations of applying PostgreSQL Row-Level Security to i2b2 in a clinical data warehouse context.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>JAMIA Open Publication (2023):&lt;/strong>&lt;br>
+&lt;a href="https://academic.oup.com/jamiaopen/article/6/3/ooad068/7242495">https://academic.oup.com/jamiaopen/article/6/3/ooad068/7242495&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Python Package on PyPI:&lt;/strong>&lt;br>
+&lt;a href="https://pypi.org/project/i2b2rls/">https://pypi.org/project/i2b2rls/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Source Code of all related projects (GitLab Group):&lt;/strong>&lt;br>
+&lt;a href="https://gitlab.com/mds-imbi-freiburg/i2b2">https://gitlab.com/mds-imbi-freiburg/i2b2&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>React Admin Data Providers</title><link>/project/ra-data/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>/project/ra-data/</guid><description>&lt;h2 id="react-admin-data-providers-for-clinical-apis--postgrest-and-fhir">React Admin Data Providers for Clinical APIs – PostgREST and FHIR&lt;/h2>
+&lt;p>The development of my React Admin data providers began with the MeSH Browser project. At that time, I needed a flexible way to connect a React Admin frontend to a PostgREST backend without manually wiring every query, filter and pagination step. Early community work provided some inspiration, but no complete implementation existed. This led to the first version of the PostgREST data provider, which gradually grew into a fully featured library which is widely used (&amp;gt;2k downloads/week).&lt;/p>
+&lt;p>Over time, the project evolved far beyond its original prototype. We added a dedicated test framework, introduced structured configuration, and turned it into a generic ecosystem that makes it easy to build React Admin frontends on top of Postgres. A demo setup was created to showcase multiple PostgreSQL FDWs together with PostgREST, illustrating how flexible the architecture can be when connecting diverse data sources. For authentication and authorization, the system integrates cleanly with Keycloak.&lt;/p>
+&lt;p>The second data provider emerged in a similar way. As part of a student project, we built a FHIR REST data provider for React Admin. Its goal was to simplify building clinical user interfaces directly on top of FHIR servers. The data provider implements FHIR search, pagination, resource handling and bundle interpretation, and was tested against the LinuxForHealth (formerly IBM) FHIR Server. Together with a small demo application, this demonstrated how React Admin can be used as a lightweight tool for building FHIR based administrative interfaces. The project resulted in a peer reviewed conference publication at ICIMTH.&lt;/p>
+&lt;p>Together, these two libraries form a small but valuable toolkit that connects modern React based user interfaces with established clinical APIs. Whether through PostgREST or FHIR, both data providers lower the barrier for creating custom user interfaces in clinical or research environments by offering reliable, clean and reusable integrations that work out of the box.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;h3 id="postgrest-data-provider">PostgREST Data Provider&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Journal Publication (Software Impacts, 2024):&lt;/strong>&lt;br>
+&lt;a href="https://www.sciencedirect.com/science/article/pii/S2665963824000873">https://www.sciencedirect.com/science/article/pii/S2665963824000873&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>NPM Package:&lt;/strong>&lt;br>
+&lt;a href="https://www.npmjs.com/package/@raphiniert/ra-data-postgrest">https://www.npmjs.com/package/@raphiniert/ra-data-postgrest&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>GitHub Repository:&lt;/strong>&lt;br>
+&lt;a href="https://github.com/raphiniert-com/ra-data-postgrest">https://github.com/raphiniert-com/ra-data-postgrest&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Demo Repository:&lt;/strong>&lt;br>
+&lt;a href="https://github.com/raphiniert-com/ra-data-postgrest-demo">https://github.com/raphiniert-com/ra-data-postgrest-demo&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="fhir-data-provider">FHIR Data Provider&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Conference Publication (ICIMTH 2023):&lt;/strong>&lt;br>
+&lt;a href="https://doi.org/10.3233/SHTI230436">https://doi.org/10.3233/SHTI230436&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>GitLab Repository:&lt;/strong>&lt;br>
+&lt;a href="https://gitlab.com/mri-tum/aiim/libs/ra-data-fhir">https://gitlab.com/mri-tum/aiim/libs/ra-data-fhir&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>NPM Package:&lt;/strong>&lt;br>
+&lt;a href="https://www.npmjs.com/package/@tum-mri-aiim/ra-data-fhir">https://www.npmjs.com/package/@tum-mri-aiim/ra-data-fhir&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>MeSH-Browser</title><link>/project/mesh-browser/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>/project/mesh-browser/</guid><description>&lt;h2 id="exploring-mesh-through-modern-search-postgrest-react-admin-and-elasticsearch">Exploring MeSH Through Modern Search: PostgREST, React-Admin, and Elasticsearch&lt;/h2>
+&lt;p>The MeSH-Browser originated from a very practical problem: German-speaking editorial teams had no usable interface to explore or apply MeSH terms. The initial motivation came from Cochrane Germany, who needed a tool to support the “Wissen Was Wirkt” blog in assigning German-language tags and categories based on the MeSH vocabulary. At the time, no low-threshold, German-friendly MeSH interface existed. DIMDI provided a German MeSH dataset, but it was difficult to use for anyone without technical expertise, and existing tools were either outdated, incomplete, or too complex for non-technical users. This gap led to the development of the MeSH-Browser.&lt;/p>
+&lt;p>The project was strongly shaped by my earlier experience with API-driven designs from ESID. We built a clean PostgREST API layer on top of a PostgreSQL database and implemented the frontend using React-Admin. To support fast and flexible search, the system integrated PostgreSQL full-text capabilities through ZomboDB and Elasticsearch, enabling instant query responses across the hierarchical MeSH vocabulary. This technical foundation proved exceptionally effective: fast to build, easy to extend, and well suited for structured biomedical terminologies. In fact, the MeSH-Browser was the starting point for the dedicated PostgREST DataProvider project, which grew out of the architectural choices made here.&lt;/p>
+&lt;p>Two highly capable Life-Science informatics students joined the development, helping deliver the browser as part of a focused project module. One of them subsequently completed his bachelor thesis on the system, comparing our browser to the official NLM version. In this small user study, our tool performed better in terms of accessibility and ease of use. This confirmed that the technical choices, PostgREST for the API, React-Admin for the UI, and ZomboDB/Elasticsearch for fast search, enabled a development process that was manageable even for junior developers, while still producing a tool that worked intuitively for non-technical end users.&lt;/p>
+&lt;p>The usability study, published as part of a peer-reviewed contribution, reinforced these findings and even with minimal hardware resources, the browser remained highly performant: the live system still runs smoothly on a VM with only 1 vCPU and 2 GB RAM, demonstrating the efficiency of the underlying architecture.&lt;/p>
+&lt;p>The MeSH-Browser ultimately filled a real and long-standing gap by offering Germany’s biomedical and health communication community a simple, robust, search-driven, and accessible way to explore MeSH terms — something that had never existed in this form before.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>MeSH-Browser (Live System):&lt;/strong>&lt;br>
+&lt;a href="https://mesh-browser.de">https://mesh-browser.de&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Technical Publication (2021):&lt;/strong>&lt;br>
+&lt;a href="https://ebooks.iospress.nl/doi/10.3233/SHTI210939">https://ebooks.iospress.nl/doi/10.3233/SHTI210939&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Usability Study (2022):&lt;/strong>&lt;br>
+&lt;a href="https://ebooks.iospress.nl/doi/10.3233/SHTI220653">https://ebooks.iospress.nl/doi/10.3233/SHTI220653&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>MIRACUM-Pipe</title><link>/project/miracum-pipeline/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>/project/miracum-pipeline/</guid><description>&lt;h2 id="miracum-pipe--standardizing-ngs-analysis-for-precision-oncology">MIRACUM-Pipe – Standardizing NGS Analysis for Precision Oncology&lt;/h2>
+&lt;p>MIRACUM-Pipe was one of my main technical contributions during 2019 and 2020, in the context of the MIRACUM consortium and its precision oncology workflows. The pipeline itself had already been established, but required significant modernization, restructuring, and containerization to become robust, reproducible, and easy to deploy across the various MIRACUM sites.&lt;/p>
+&lt;p>My first contribution was a deep refactoring of the existing workflow, which at the time consisted of a set of Bash scripts that had grown organically. I restructured the codebase, cleaned up the scripting logic, modularized core components, and ensured a more maintainable and transparent execution flow. This laid the foundation for the next step: a fully dockerized version of the pipeline that could be executed in a standardized, reproducible way independent of local environments.&lt;/p>
+&lt;p>To achieve this, a second project was created to expose the pipeline via Docker, making installation and usage significantly easier for newly onboarding MIRACUM centers and enabling reproducible runs across different infrastructures. The dockerized version soon became the recommended deployment approach. The entire code was published publicly under the AGPLv3 license.&lt;/p>
+&lt;p>An early attempt was made to publish the pipeline as an Application Note in Bioinformatics, but this submission was not accepted. Later, after several subsequent extensions and improvements, completed when I was no longer actively involved, the pipeline was successfully published in MDPI Cancers. The publication reflects the combined efforts of the team and documents MIRACUM-Pipe as a comprehensive NGS analysis solution.&lt;/p>
+&lt;p>MIRACUM-Pipe supports the complete analysis workflow needed in precision oncology and Molecular Tumor Boards (MTBs). It provides a one-prompt solution covering quality control, variant calling, copy number estimation, functional annotation, visualization, and automated report generation. By standardizing these steps, the pipeline supports MTB case preparation and presentation by generating consistent, high-quality sequencing summaries for clinicians and researchers.&lt;/p>
+&lt;p>The associated repositories remain available on GitHub, including both the primary codebase and the dockerized variant, and continue to be used within and beyond the MIRACUM consortium.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Publication (Cancers, 2023):&lt;/strong>&lt;br>
+&lt;a href="https://www.mdpi.com/2072-6694/15/13/3456">https://www.mdpi.com/2072-6694/15/13/3456&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>GitHub Repository:&lt;/strong>&lt;br>
+&lt;a href="https://github.com/AG-Boerries/MIRACUM-Pipe">https://github.com/AG-Boerries/MIRACUM-Pipe&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Dockerized Version:&lt;/strong>&lt;br>
+&lt;a href="https://github.com/AG-Boerries/MIRACUM-Pipe-docker">https://github.com/AG-Boerries/MIRACUM-Pipe-docker&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>tala-med Search Engine</title><link>/project/tala-med/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>/project/tala-med/</guid><description>&lt;h2 id="tala-med-search--engineering-a-medical-search-engine-from-prototype-to-modern-ir-platform">tala-med search – Engineering a Medical Search Engine from Prototype to Modern IR Platform&lt;/h2>
+&lt;p>The tala-med search engine began in 2019 as a GAP funded project. I joined initially as technical support, but after a colleague left the team I took over the development lead and guided the system through several difficult phases into a working prototype that could be evaluated scientifically. The early version of tala-med used a React interface based on design drafts created by a graphic designer in the group. On the backend, we used AppSearch together with the Fess crawler. This setup was sufficient for the first prototype and for the first evaluation, but it became clear that the closed ecosystem limited our flexibility, especially regarding custom NLP components and extensible retrieval pipelines.&lt;/p>
+&lt;p>With this in mind we designed a new technology platform that offered full control over indexing, querying, scoring and synonym handling. The architecture was inspired by the experience gained with the MeSH-Browser and built on top of the subZero stack. As a student project we developed a synonym expansion component using a FastText based approach, and even managed to outperform the previous solution in speed. This work resulted in a journal publication documenting the new retrieval platform and its technical design.&lt;/p>
+&lt;p>A second major building block was the crawler. The original Fess setup lacked the flexibility and transparency needed for large scale, domain controlled crawling. We migrated to a custom adapted version of Apache Nutch, which became the basis of a student project that later resulted in a peer reviewed MIE 2025 publication. Together, the new retrieval platform and the improved crawler formed a modern, maintainable and fully open architecture for tala-med.&lt;/p>
+&lt;p>Both contributions were completed during the earlier development phase. I have since continued to work on tala-med, and we are currently preparing the deployment of the new platform to updated servers. The goal is to replace the old prototype implementation in late 2025 or early 2026 with the fully redesigned architecture.&lt;/p>
+&lt;p>tala-med is now a fully re-engineered medical search engine with an open, extensible infrastructure, modern crawling, synonym expansion, and a retrieval pipeline that can be adapted to new NLP methods as needed. What started as a constrained prototype has now matured into a flexible research and production environment backed by multiple publications and several years of iterative development.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Live Search Instance:&lt;/strong>&lt;br>
+&lt;a href="https://suche.tala-med.info">https://suche.tala-med.info&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Source Code (Search Platform Repository):&lt;/strong>&lt;br>
+&lt;a href="https://gitlab.com/tala-med/search-platform">https://gitlab.com/tala-med/search-platform&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Prototype and Human Factors Evaluation (JMIR Human Factors, 2025):&lt;/strong>&lt;br>
+&lt;a href="https://humanfactors.jmir.org/2025/1/e56941/">https://humanfactors.jmir.org/2025/1/e56941/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Technical Improvement and Synonym Expansion (Health Informatics Journal, 2025):&lt;/strong>&lt;br>
+&lt;a href="https://journals.sagepub.com/doi/full/10.1177/14604582251381271">https://journals.sagepub.com/doi/full/10.1177/14604582251381271&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom Apache Nutch Crawler (MIE 2025):&lt;/strong>&lt;br>
+&lt;a href="https://ebooks.iospress.nl/doi/10.3233/SHTI250423">https://ebooks.iospress.nl/doi/10.3233/SHTI250423&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>ESID Registry</title><link>/project/esid/</link><pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate><guid>/project/esid/</guid><description>&lt;p>ESID was one of the most formative long-term projects in my early medical informatics career. Through the ESID Registry I had the opportunity to work at the intersection of clinical data quality, registry design, modern database engineering, and distributed reporting systems. It was also the first project where I was able to present work at international conferences early on, and where I could demonstrate empirically that plausibility checks directly lead to higher data quality — an insight that later influenced several follow-up systems.&lt;/p>
+&lt;p>During the early phase of the redesigned ESID registry, the system itself had already been implemented by the core development group. My role focused on publishing the new registry through an Application Note and presenting its concepts and early insights at ESID meetings. In addition, I developed several of the technical components that became central to the operational ecosystem around the registry, most notably the reporting tool, various export mechanisms (including automated email-based exports), and supporting infrastructure for data access and data delivery. Through these contributions I helped make the registry more accessible, more analyzable, and more useful for both clinicians and researchers.&lt;/p>
+&lt;p>A major part of my ESID work centered on the reporting and export infrastructure surrounding the registry. While the registry itself was already in place, its operational ecosystem required modernisation. I developed the reporting tool, which unified several existing data flows, including the integration of UKPID registry exports via custom software. As part of this effort, the underlying database was periodically migrated from MySQL to PostgreSQL in an automated pipeline, enabling more robust data handling and laying the foundation for secure, structured access mechanisms such as Row-Level Security. This environment later supported API-based data retrieval, export interfaces, and interactive reporting functions for both internal and external stakeholders. The pipeline was later stabilized and re-implemented as Snakemake workflow.&lt;/p>
+&lt;p>With PostgreSQL in place, we implemented a modern API using the SubZero stack, enabling safe and structured data access. Row-Level Security (RLS) policies were deployed across all tables to guarantee user-specific and registry-specific permissions. In the internal area of the platform, permitted users could generate exports, including specialized outputs such as the APDS study dataset. The system was built around RabbitMQ and Socket-based notifications. The frontend was developed in React and consumed a GraphQL interface built on top of the API layer. The public-facing side provided global registry statistics, while the internal dashboard showed the subset of data relevant to the logged-in user’s registry assignment.&lt;/p>
+&lt;p>Later, there were plans to migrate the entire reporting solution to Apache Superset. Initial groundwork was completed: a connection to the user directory was implemented, and the database was preconfigured with RLS so that dashboards would automatically respect each user’s data access permissions. However, due to limited resources and the end of the contract period, the full migration was ultimately not carried out.&lt;/p>
+&lt;p>The APDS study was an important use case within the ESID ecosystem. Its dataset required a human-readable export format despite being based on nested data structures. To make these structures visually intuitive, we created a color-coded Excel representation that allowed clinicians to interpret hierarchical data at a glance within a so called sparse spreadsheet. The tool was named Json2Xlsx and was later published in Software Impacts. This export mechanism supported numerous APDS publications and was also used for data exports to industry partners.&lt;/p>
+&lt;p>A further component connected to the ESID ecosystem involved the integration of ESID within the German PID-NET infrastructure using the OSSE registry framework. This was documented in a dedicated publication describing how the OSSE bridgehead enables interoperability between the customized ESID registry and the wider network of rare disease registries. While my own work focused primarily on reporting, export mechanisms, API access, and data delivery around ESID, this paper provides the architectural context in which our technical ecosystem operated: it shows how the ESID registry can participate in decentralized, federated queries without relinquishing data sovereignty, and how OSSE acts as an interoperability layer for national and international collaborative research. The approach demonstrated how a highly customized registry like ESID can connect to the OSSE platform via a free and maintainable toolchain, illustrating the broader interoperability landscape in which my ESID-related technical contributions were embedded.&lt;/p>
+&lt;p>Overall, ESID represents a central pillar of my early work in registry design, data quality, API-driven architectures, and secure access control via PostgreSQL and RLS. It is one of the projects where methodological development, practical clinical utility, and research contributions came together in a meaningful way, and one that influenced how I approached subsequent registry and data pipeline projects.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>New ESID Registry – Application Note:&lt;/strong>&lt;br>
+&lt;a href="https://academic.oup.com/bioinformatics/article/35/24/5367/5526873">https://academic.oup.com/bioinformatics/article/35/24/5367/5526873&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>ESID Reporting Tool:&lt;/strong>&lt;br>
+&lt;a href="https://cci-reporting.uniklinik-freiburg.de/#/">https://cci-reporting.uniklinik-freiburg.de/#/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>ESID Registry Overview (2020, Frontiers in Immunology):&lt;/strong>&lt;br>
+&lt;a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7578818/">https://pmc.ncbi.nlm.nih.gov/articles/PMC7578818/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>ESID Registry Working Party:&lt;/strong>&lt;br>
+&lt;a href="https://esid.org/working-parties/registry-working-party/">https://esid.org/working-parties/registry-working-party/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>AL-PID Registry</title><link>/project/al-pid/</link><pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate><guid>/project/al-pid/</guid><description>&lt;h2 id="al-pid--from-a-legacy-access-structure-to-a-functional-clinical-registry">AL-PID – From a Legacy Access Structure to a Functional Clinical Registry&lt;/h2>
+&lt;p>AL-PID was the very first project I worked on when I joined the CCI in 2015. What existed initially was a raw Microsoft Access database intended to serve as a registry for patients with ALPS and related primary immunodeficiencies. What was missing was everything required for actual clinical use: a user interface, a coherent data model, plausibility logic, and an export workflow suitable for downstream scientific analysis.&lt;/p>
+&lt;p>The goal was therefore clear: transform a static legacy database into a usable, validated clinical registry.&lt;/p>
+&lt;p>I developed a complete user interface in Microsoft Access and Visual Basic, inspired by ESID but built independently. Central to the system was a tree-structured plausibility logic implemented through event-driven hooks such as OnClick and OnChange. This logic ensured consistent, clinically meaningful data entry and protected the dataset from contradictory or incomplete inputs.&lt;/p>
+&lt;p>A distinctive aspect of AL-PID was its dynamic, visually guided plausibility system. The UI did not simply validate data in the background, but actively controlled the user’s workflow by showing or hiding interface elements based on clinical context. Only when certain variables were selected did additional fields, sections, or action buttons appear. This approach allowed clinicians to focus on the exact data relevant to the case at hand, reduced cognitive load, and prevented invalid combinations from ever being entered. It was a lightweight but highly effective form of context-aware data entry entirely implemented within Access and VBA.&lt;/p>
+&lt;p>Over time, AL-PID evolved not only at the UI level but also structurally. The original data model had grown organically and lacked clear boundaries between clinical entities. I refactored and abstracted the schema: redundant fields were consolidated, variable groups reorganized, and a clean separation between MDAT and IDAT was introduced to satisfy data protection requirements. The result was a modular and extensible data model that improved maintainability, validation, and long-term data quality. This evolving structure became the backbone that enabled stable exports for subsequent statistical workflows.&lt;/p>
+&lt;p>During my later guest scientist period at the CCI, clinicians required a publication-ready export. We designed an Excel-based format that medical staff could populate without technical hurdles. I then implemented a Python-based exporter that converted the sheets into a standardized dataset suitable for further analysis. This workflow ultimately enabled a successful publication in The Lancet Haematology, marking both the scientific impact of the project and the maturity of the registry system.&lt;/p>
+&lt;p>Looking back, AL-PID was a defining early project for me: a demanding but formative introduction to clinical registries, data modeling, and the practical realities of medical informatics. Many of the principles developed here later influenced my subsequent registry and data pipeline work, including ESID and OSSE-based systems.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Project Overview (CCI Freiburg):&lt;/strong>&lt;br>
+&lt;a href="https://www.uniklinik-freiburg.de/cci/studien/alpsal-pid.html">https://www.uniklinik-freiburg.de/cci/studien/alpsal-pid.html&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🤗 &lt;strong>Publication (The Lancet Haematology):&lt;/strong>&lt;br>
+&lt;a href="https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(23)00362-9">https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(23)00362-9&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

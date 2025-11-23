@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Deep Learning on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</title><link>/tags/deep-learning/</link><description>Recent content in Deep Learning on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright &amp;copy; {year}</copyright><lastBuildDate>Fri, 24 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/deep-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>HalleluBERT</title><link>/project/hallelubert/</link><pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate><guid>/project/hallelubert/</guid><description>&lt;h2 id="hallelubert--a-compact-contribution-with-a-state-of-the-art-impact">HalleluBERT – A Compact Contribution with a State-of-the-Art Impact&lt;/h2>
+&lt;p>HalleluBERT was designed as a focused, compact research contribution, a small paper with a clear goal: to build a strong Hebrew RoBERTa-style model and evaluate how far pre-training and scaling would push performance in a low-resource setting.&lt;/p>
+&lt;p>Although modest in scope, the project delivered something remarkable: the first large Hebrew RoBERTa model trained with a modern pre-training setup, achieving state-of-the-art performance across the evaluation benchmarks we designed.&lt;/p>
+&lt;p>The workflow followed the pattern established in earlier projects.&lt;br>
+The pre-training was executed on a TPUv4-128 pod, while the entire downstream evaluation was performed locally on private basement hardware, using the same workstation that powered GeistBERT and parts of ChristBERT. In that sense, HalleluBERT represents the final chapter of a long hardware-driven research arc, the last model trained with this infrastructure setup.&lt;/p>
+&lt;p>From a historical perspective, HalleluBERT is not the most complex or emotionally loaded project in the family. But scientifically, it closes a loop: it rounds off the sequence GottBERT → GeistBERT → ChristBERT with a clean, technically sharp contribution that stands on its own.&lt;/p>
+&lt;p>The work is publicly available as an arXiv preprint and currently under review for LREC-COLING 2026.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Preprint (2025):&lt;/strong>&lt;br>
+&lt;a href="https://arxiv.org/abs/2510.21372">https://arxiv.org/abs/2510.21372&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
+&lt;a href="https://huggingface.co/HalleluBERT">https://huggingface.co/HalleluBERT&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>SindBERT</title><link>/project/sindbert/</link><pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate><guid>/project/sindbert/</guid><description>&lt;h2 id="sindbert--the-turkish-model-that-started-a-new-chapter">SindBert – The Turkish Model That Started a New Chapter&lt;/h2>
+&lt;p>SindBert started as an exploratory attempt to bring high-quality RoBERTa-style language modeling to Turkish. The idea originally emerged during the broader multilingual phase that followed GottBERT, GeistBERT, ChristBERT, HalleluBERT and PortBERT. After finishing PortBERT, the timing finally felt right to extend this line of research to another underrepresented language.&lt;/p>
+&lt;p>With the pipeline already stable from previous projects, we created the first large-scale RoBERTa-style Turkish model. This makes SindBert a significant technical milestone within the landscape of Turkish transformer models, and an important step toward raising Turkish NLP to the architectural standards used in higher-resource languages.&lt;/p>
+&lt;p>The study behind SindBert was conducted with considerable care. We systematically reviewed existing Turkish models and evaluated them across an extensive set of downstream benchmarks. The evaluation was carried out in two stages: first on a private workstation with two RTX 3090 GPUs in SLI, and later on the LRZ BayernKI H100 cluster, which enabled the training and assessment of the large SindBert variants.&lt;/p>
+&lt;p>A key insight from the study was that the performance of Turkish models is not driven simply by corpus size. Extremely large corpora did not consistently translate into stronger results. Instead, the best performance came from models trained on corpora with moderate size but high internal variance and quality. This finding reinforces the idea that thoughtful corpus design often matters more than sheer quantity for languages with complex morphology.&lt;/p>
+&lt;p>Although SindBERT does not yet have a formal publication attached to it, the project marks the beginning of a new chapter in my international research. It follows directly after PortBERT and represents the point where the broader model family began to expand into new linguistic territory. The work was completed in Freiburg at my new research institution, where the evaluations and analyses were finalized. SindBERT may evolve further or be revisited in a second iteration, but even in its current form it stands as the first large Turkish RoBERTa-style model and an important step toward stronger transformer development for the Turkish language. A preprint of the work is available, and the paper has been submitted to SIGTURK@EACL 2026.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Preprint (2025):&lt;/strong>&lt;br>
+&lt;a href="https://arxiv.org/abs/2510.21364">https://arxiv.org/abs/2510.21364&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
+&lt;a href="https://huggingface.co/SindBERT">https://huggingface.co/SindBERT&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>ChristBERT</title><link>/project/christbert/</link><pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate><guid>/project/christbert/</guid><description>&lt;h2 id="building-a-medical-german-language-model-against-the-odds">Building a Medical German Language Model Against the Odds&lt;/h2>
+&lt;p>ChristBERT was developed as part of my Master’s thesis and focuses on domain-specific German clinical language modeling. The project investigated two complementary strategies: continued pre-training on top of GottBERT/GeistBERT, and training from scratch using both a general-purpose RoBERTa tokenizer and a specialized medical vocabulary. This enabled a systematic comparison between general, domain-adapted, and fully specialized pre-training pipelines for German medical NLP.&lt;/p>
+&lt;p>During the early conceptual phase, the supervision structure of the thesis changed, and the project was reassigned to a new advisor, who later became the supervisor of my doctoral work. ChristBERT was trained using a combination of compute resources: through an existing project partnership, parts of the full pre-training were executed on the Augsburg compute cluster, while downstream evaluations, and parts of the translation workflows ran on privately built GPU hardware in my basement.&lt;/p>
+&lt;p>ChristBERT showed that continued pre-training on German clinical text offers measurable improvements over general-purpose RoBERTa models, while training from scratch with a medical-specific tokenizer provides additional insights into domain vocabulary specialization and its trade-offs.&lt;/p>
+&lt;p>The work has been released as a preprint and is currently under review at BMC Medical Informatics and Decision Making.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Preprint (2025):&lt;/strong>&lt;br>
+&lt;a href="https://www.researchsquare.com/article/rs-7332811/v1">https://www.researchsquare.com/article/rs-7332811/v1&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
+&lt;a href="https://huggingface.co/ChristBERT">https://huggingface.co/ChristBERT&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>PortBERT</title><link>/project/portbert/</link><pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate><guid>/project/portbert/</guid><description>&lt;h2 id="portbert--exploring-efficiency-under-pressure-and-in-deep-waters">PortBERT – Exploring Efficiency Under Pressure and in Deep Waters&lt;/h2>
+&lt;p>PortBERT has its roots in an early collaboration idea from 2021/22, when a Brazilian research group approached me with the vision of building a Portuguese RoBERTa-style model. I shared my pre-training pipeline with them, but at the time, the fairseq RoBERTa branch had a broken implementation and my preprocessing workflow contained an unnoticed bug. As a result, the collaboration could not produce a functional model, and the project quietly came to a halt.&lt;/p>
+&lt;p>Years later, during a research stay on the Azores, I revisited the idea independently. The full Portuguese pre-training had actually been carried out earlier, during the GottBERT development phase, when we debugged and stabilized the pipeline. With the system running reliably at that time, I launched a complete Portuguese pre-training run on a TPUv4-128 pod and on a GPU server, resulting in the PortBERT base and large models.&lt;/p>
+&lt;p>The period on the Azores added a unique dimension to the project.&lt;br>
+It was a time of intense pressure: I was waiting for the contract from my upcoming research position in Freiburg, while simultaneously completing my divemaster internship and training. Much of the evaluation work was carried out between deep dives, decompression lessons, and long days of practical training. This phase taught me, quite literally, to breathe under pressure. In hindsight, PortBERT became the model that was built and evaluated in the rhythm of the ocean: long, calm stretches of computation framed by physical depth and mental discipline.&lt;/p>
+&lt;p>The evaluation revealed an important insight:&lt;br>
+efficiency is an essential dimension of model design.&lt;br>
+PortBERT achieved competitive results despite being smaller and more cost-efficient than many recent Portuguese encoder LLMs. The study also highlighted that the Portuguese corpus could benefit from greater internal variance, and that techniques like Whole Word Masking might offer additional improvements, though WWM was not available within the TPU workflow used here.&lt;/p>
+&lt;p>With this, PortBERT introduced a new perspective into the Portuguese NLP landscape:&lt;br>
+that efficiency, compute cost, corpus composition, and training dynamics should receive as much attention as raw performance. The goal of the project was not only to build another model, but to encourage the community to look beyond leaderboard scores when developing modern transformer architectures and models.&lt;/p>
+&lt;h2 id="portbert-was-presented-at-globalnlp2025ranlp-2025httpsglobalnlp2025githubio-in-varna-bulgaria-and-we-are-currently-awaiting-its-release-on-the-acl-anthology-the-model-itself-is-publicly-available-on-huggingface">PortBERT was presented at &lt;a href="https://globalnlp2025.github.io">GlobalNLP2025@RANLP 2025&lt;/a> in Varna, Bulgaria, and we are currently awaiting its release on the ACL Anthology. The model itself is publicly available on HuggingFace.&lt;/h2>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
+&lt;a href="https://huggingface.co/PortBERT">https://huggingface.co/PortBERT&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>GeistBERT</title><link>/project/geistbert/</link><pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate><guid>/project/geistbert/</guid><description>&lt;h2 id="a-story-of-resilience-constraint-and-scientific-maturity">A Story of Resilience, Constraint, and Scientific Maturity&lt;/h2>
+&lt;p>GeistBERT was created during one of the most turbulent and defining phases of my doctoral work. AFollowing a supervisor transition at TUM, access to the compute environment I previously used was no longer available, so I migrated the entire evaluation workflow to my own workstation. What could have halted the project entirely instead became a turning point.&lt;/p>
+&lt;p>With no cluster access, I migrated the full evaluation pipeline into my basement and ran it on a self-built workstation with two RTX 3090 GPUs in SLI. Every downstream task was completed entirely on private hardware. Constraints turned into autonomy, and the work slowly took shape.&lt;/p>
+&lt;p>At that time, the plan was more ambitious:&lt;br>
+we intended to train Longformer- and Nyströmformer-based variants of GottBERT to compare sparse-attention architectures in continued pre-training on a GPU setup. However, an unnoticed mistake in the pre-training made these large-scale models useless. Instead of releasing partially flawed or inconclusive models, we made the conscious decision to retract the extended architectures and focus the paper on a clean, well-defined contribution.&lt;/p>
+&lt;p>The final version of GeistBERT therefore centered on what was both scientifically solid and practically valuable:&lt;br>
+a robust RoBERTa-base model with continued pre-training, using Whole Word Masking and a large, diverse corpus, carefully evaluated across standard German NLP benchmarks.&lt;br>
+Despite being a base model, GeistBERT achieved state-of-the-art performance in multiple tasks and approached, and in some benchmarks even surpassed, the performance of existing large models.&lt;/p>
+&lt;p>During this phase, GeistBERT also revealed an interesting methodological insight:&lt;br>
+unlike earlier TPU-based experiments, the GPU training workflow allowed for a substantially higher peak learning rate without instability. This raised new research questions about whether the stability originated from implementation differences in the GPU stack, or whether it was a characteristic of continued pre-training itself. These observations gave the project an additional scientific dimension beyond the model alone.&lt;/p>
+&lt;p>The manuscript was completed far from Germany, during a research stay on the Azores, and released as a pre-print. Later, GeistBERT found its academic platform at &lt;a href="https://globalnlp2025.github.io">GlobalNLP2025@RANLP 2025&lt;/a> in Varna, Bulgaria.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Preprint (2025):&lt;/strong>&lt;br>
+&lt;a href="https://arxiv.org/abs/2506.11903">https://arxiv.org/abs/2506.11903&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
+&lt;a href="https://huggingface.co/GeistBERT">https://huggingface.co/GeistBERT&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>GottBERT</title><link>/project/gottbert/</link><pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate><guid>/project/gottbert/</guid><description>&lt;h2 id="a-journey-marked-by-endurance-transition-and-discovery">A Journey Marked by Endurance, Transition, and Discovery&lt;/h2>
+&lt;p>GottBERT started from a simple observation: while BERT-like models were rapidly advancing NLP research and RoBERTa had become a widely adopted standard, there was no single-language RoBERTa model for German. Multilingual models were everywhere, but consistently fell short of high-quality monolingual models in a given language.&lt;/p>
+&lt;p>This gap was the starting point for GottBERT.&lt;/p>
+&lt;p>The first version emerged before my move to Munich, a project driven by scientific curiosity that quickly gained momentum. Trained on a 256-core TPUv3 Pod using the German portion of the OSCAR corpus, the initial GottBERT model followed the original RoBERTa pre-training recipe implemented in fairseq. Even without elaborate hyperparameter tuning, it delivered strong results: across multiple NER and text-classification benchmarks, GottBERT outperformed many tested German and multilingual comparison models.&lt;/p>
+&lt;p>With the relocation to Munich, the second phase of the project began. GottBERT was further refined, more deeply evaluated, and extended with a Large variant. During this phase, we also examined the impact of filtering the OSCAR corpus, a reasonable hypothesis that turned out differently than expected. Despite corpus filtering, performance remained largely unchanged.&lt;/p>
+&lt;p>In the updated EMNLP version, the focus shifted from reporting the initial results to providing a more grounded scientific framing, including a clearer comparison with existing German and multilingual BERT models, an extended evaluation across downstream tasks, and an investigation of how filtering the OSCAR corpus affects pre-training quality.&lt;/p>
+&lt;p>Today, GottBERT stands as the first German RoBERTa model, freely available to the research community, originally under AGPLv3, later relicensed under MIT. It remains one of the projects that shaped my research journey: the combination of a clear gap, technical ambition, a geographical transition, academic maturation, and a final result that meaningfully supports the German NLP community.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Preprint (2020):&lt;/strong>&lt;br>
+&lt;a href="https://arxiv.org/abs/2012.02110v1">https://arxiv.org/abs/2012.02110v1&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>EMNLP 2024 Paper:&lt;/strong>&lt;br>
+&lt;a href="https://aclanthology.org/2024.emnlp-main.1183/">https://aclanthology.org/2024.emnlp-main.1183/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Poster &amp;amp; Presentation (Underline):&lt;/strong>&lt;br>
+&lt;a href="https://underline.io/events/469/posters/18793/poster/108142-gottbert-a-pure-german-language-model?tab=abstract">https://underline.io/events/469/posters/18793/poster/108142-gottbert-a-pure-german-language-model?tab=abstract&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
+&lt;a href="https://huggingface.co/GottBERT">https://huggingface.co/GottBERT&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

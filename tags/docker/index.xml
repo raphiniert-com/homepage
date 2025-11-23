@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</title><link>/tags/docker/</link><description>Recent content in Docker on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright &amp;copy; {year}</copyright><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>i2b2RLS</title><link>/project/i2b2rls/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><guid>/project/i2b2rls/</guid><description>&lt;h2 id="i2b2rls--fine-grained-access-control-for-clinical-data-warehouses">i2b2RLS – Fine-Grained Access Control for Clinical Data Warehouses&lt;/h2>
+&lt;p>The idea for i2b2RLS emerged in 2019 when I joined the IMBI team in Freiburg. With my experience from the ESID reporting infrastructure, it became clear that a comparable, policy-driven access-control layer could meaningfully strengthen the security architecture of our local i2b2 installation. The goal was to take the central i2b2 instance at the Freiburg Data Integration Center and deploy it with true row-level access control using PostgreSQL RLS, a level of fine-grained authorization that i2b2 did not support out of the box.&lt;/p>
+&lt;p>Achieving this required modifications on two layers: adapting parts of the i2b2 stack itself, and developing a consistent workflow to generate, validate, and deploy PostgreSQL RLS policies. To evaluate feasibility, we created a synthetic dataset and measured RLS performance under realistic i2b2 query patterns. In the course of this work we also conducted, to our knowledge, the first systematic performance benchmark evaluating PostgreSQL Row-Level Security in the context of a clinical research data warehouse. Using the synthetic data and representative query structures, we demonstrated that a carefully designed policy architecture can be deployed in production settings with acceptable overhead.&lt;/p>
+&lt;p>To make the system maintainable and reproducible, we implemented a Python-based deployment tool that automated the generation and installation of RLS policy sets. The tool incorporates pgTAP tests to reduce the risk of deploying faulty or incomplete policies, a critical safeguard for hospital-grade access control. We released the tool as open source on PyPI, making it easy for other institutions to adopt similar security layers.&lt;/p>
+&lt;p>For easier setup, we also created a Docker-based i2b2 stack that includes all required components for RLS deployment, significantly lowering the barrier for testing or adopting this approach in other environments.&lt;/p>
+&lt;p>The project ultimately resulted in a JAMIA Open publication, documenting the architecture, performance evaluation, and practical deployment considerations of applying PostgreSQL Row-Level Security to i2b2 in a clinical data warehouse context.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>JAMIA Open Publication (2023):&lt;/strong>&lt;br>
+&lt;a href="https://academic.oup.com/jamiaopen/article/6/3/ooad068/7242495">https://academic.oup.com/jamiaopen/article/6/3/ooad068/7242495&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Python Package on PyPI:&lt;/strong>&lt;br>
+&lt;a href="https://pypi.org/project/i2b2rls/">https://pypi.org/project/i2b2rls/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Source Code of all related projects (GitLab Group):&lt;/strong>&lt;br>
+&lt;a href="https://gitlab.com/mds-imbi-freiburg/i2b2">https://gitlab.com/mds-imbi-freiburg/i2b2&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>MIRACUM-Pipe</title><link>/project/miracum-pipeline/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>/project/miracum-pipeline/</guid><description>&lt;h2 id="miracum-pipe--standardizing-ngs-analysis-for-precision-oncology">MIRACUM-Pipe – Standardizing NGS Analysis for Precision Oncology&lt;/h2>
+&lt;p>MIRACUM-Pipe was one of my main technical contributions during 2019 and 2020, in the context of the MIRACUM consortium and its precision oncology workflows. The pipeline itself had already been established, but required significant modernization, restructuring, and containerization to become robust, reproducible, and easy to deploy across the various MIRACUM sites.&lt;/p>
+&lt;p>My first contribution was a deep refactoring of the existing workflow, which at the time consisted of a set of Bash scripts that had grown organically. I restructured the codebase, cleaned up the scripting logic, modularized core components, and ensured a more maintainable and transparent execution flow. This laid the foundation for the next step: a fully dockerized version of the pipeline that could be executed in a standardized, reproducible way independent of local environments.&lt;/p>
+&lt;p>To achieve this, a second project was created to expose the pipeline via Docker, making installation and usage significantly easier for newly onboarding MIRACUM centers and enabling reproducible runs across different infrastructures. The dockerized version soon became the recommended deployment approach. The entire code was published publicly under the AGPLv3 license.&lt;/p>
+&lt;p>An early attempt was made to publish the pipeline as an Application Note in Bioinformatics, but this submission was not accepted. Later, after several subsequent extensions and improvements, completed when I was no longer actively involved, the pipeline was successfully published in MDPI Cancers. The publication reflects the combined efforts of the team and documents MIRACUM-Pipe as a comprehensive NGS analysis solution.&lt;/p>
+&lt;p>MIRACUM-Pipe supports the complete analysis workflow needed in precision oncology and Molecular Tumor Boards (MTBs). It provides a one-prompt solution covering quality control, variant calling, copy number estimation, functional annotation, visualization, and automated report generation. By standardizing these steps, the pipeline supports MTB case preparation and presentation by generating consistent, high-quality sequencing summaries for clinicians and researchers.&lt;/p>
+&lt;p>The associated repositories remain available on GitHub, including both the primary codebase and the dockerized variant, and continue to be used within and beyond the MIRACUM consortium.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Publication (Cancers, 2023):&lt;/strong>&lt;br>
+&lt;a href="https://www.mdpi.com/2072-6694/15/13/3456">https://www.mdpi.com/2072-6694/15/13/3456&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>GitHub Repository:&lt;/strong>&lt;br>
+&lt;a href="https://github.com/AG-Boerries/MIRACUM-Pipe">https://github.com/AG-Boerries/MIRACUM-Pipe&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Dockerized Version:&lt;/strong>&lt;br>
+&lt;a href="https://github.com/AG-Boerries/MIRACUM-Pipe-docker">https://github.com/AG-Boerries/MIRACUM-Pipe-docker&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

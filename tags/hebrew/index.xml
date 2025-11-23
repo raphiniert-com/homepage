@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hebrew on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</title><link>/tags/hebrew/</link><description>Recent content in Hebrew on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright &amp;copy; {year}</copyright><lastBuildDate>Fri, 24 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/hebrew/index.xml" rel="self" type="application/rss+xml"/><item><title>HalleluBERT</title><link>/project/hallelubert/</link><pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate><guid>/project/hallelubert/</guid><description>&lt;h2 id="hallelubert--a-compact-contribution-with-a-state-of-the-art-impact">HalleluBERT – A Compact Contribution with a State-of-the-Art Impact&lt;/h2>
+&lt;p>HalleluBERT was designed as a focused, compact research contribution, a small paper with a clear goal: to build a strong Hebrew RoBERTa-style model and evaluate how far pre-training and scaling would push performance in a low-resource setting.&lt;/p>
+&lt;p>Although modest in scope, the project delivered something remarkable: the first large Hebrew RoBERTa model trained with a modern pre-training setup, achieving state-of-the-art performance across the evaluation benchmarks we designed.&lt;/p>
+&lt;p>The workflow followed the pattern established in earlier projects.&lt;br>
+The pre-training was executed on a TPUv4-128 pod, while the entire downstream evaluation was performed locally on private basement hardware, using the same workstation that powered GeistBERT and parts of ChristBERT. In that sense, HalleluBERT represents the final chapter of a long hardware-driven research arc, the last model trained with this infrastructure setup.&lt;/p>
+&lt;p>From a historical perspective, HalleluBERT is not the most complex or emotionally loaded project in the family. But scientifically, it closes a loop: it rounds off the sequence GottBERT → GeistBERT → ChristBERT with a clean, technically sharp contribution that stands on its own.&lt;/p>
+&lt;p>The work is publicly available as an arXiv preprint and currently under review for LREC-COLING 2026.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Preprint (2025):&lt;/strong>&lt;br>
+&lt;a href="https://arxiv.org/abs/2510.21372">https://arxiv.org/abs/2510.21372&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
+&lt;a href="https://huggingface.co/HalleluBERT">https://huggingface.co/HalleluBERT&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

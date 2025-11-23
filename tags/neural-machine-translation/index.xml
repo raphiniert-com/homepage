@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Neural Machine Translation on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</title><link>/tags/neural-machine-translation/</link><description>Recent content in Neural Machine Translation on Raphael Schmitt — AI Researcher | Language Models, NLP &amp; Information Retrieval</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright &amp;copy; {year}</copyright><lastBuildDate>Thu, 18 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/neural-machine-translation/index.xml" rel="self" type="application/rss+xml"/><item><title>ChristBERT</title><link>/project/christbert/</link><pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate><guid>/project/christbert/</guid><description>&lt;h2 id="building-a-medical-german-language-model-against-the-odds">Building a Medical German Language Model Against the Odds&lt;/h2>
+&lt;p>ChristBERT was developed as part of my Master’s thesis and focuses on domain-specific German clinical language modeling. The project investigated two complementary strategies: continued pre-training on top of GottBERT/GeistBERT, and training from scratch using both a general-purpose RoBERTa tokenizer and a specialized medical vocabulary. This enabled a systematic comparison between general, domain-adapted, and fully specialized pre-training pipelines for German medical NLP.&lt;/p>
+&lt;p>During the early conceptual phase, the supervision structure of the thesis changed, and the project was reassigned to a new advisor, who later became the supervisor of my doctoral work. ChristBERT was trained using a combination of compute resources: through an existing project partnership, parts of the full pre-training were executed on the Augsburg compute cluster, while downstream evaluations, and parts of the translation workflows ran on privately built GPU hardware in my basement.&lt;/p>
+&lt;p>ChristBERT showed that continued pre-training on German clinical text offers measurable improvements over general-purpose RoBERTa models, while training from scratch with a medical-specific tokenizer provides additional insights into domain vocabulary specialization and its trade-offs.&lt;/p>
+&lt;p>The work has been released as a preprint and is currently under review at BMC Medical Informatics and Decision Making.&lt;/p>
+&lt;hr>
+&lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Preprint (2025):&lt;/strong>&lt;br>
+&lt;a href="https://www.researchsquare.com/article/rs-7332811/v1">https://www.researchsquare.com/article/rs-7332811/v1&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
+&lt;a href="https://huggingface.co/ChristBERT">https://huggingface.co/ChristBERT&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>
