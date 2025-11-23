@@ -6,7 +6,7 @@ tags:
   - Language Models
   - Hebrew
   - Deep Learning
-  - Continued Pretraining
+  - Model Pretraining
   - Low-Resource NLP
   - Open Source
 date: "2025-10-24"

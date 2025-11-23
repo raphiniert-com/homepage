@@ -10,6 +10,7 @@ tags:
   - Corpus Design
   - Open Source
   - Efficiency
+  - Model Pretraining
 date: "2025-10-24"
 
 image:

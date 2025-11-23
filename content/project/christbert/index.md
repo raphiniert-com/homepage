@@ -9,10 +9,11 @@ tags:
   - Medical NLP
   - Deep Learning
   - Continued Pretraining
+  - Model Pretraining
   - Domain Adaptation
   - Open Source
   - Neural Machine Translation
-  - Corpus Creation
+  - Corpus Design
 date: "2025-09-18"
 
 image:

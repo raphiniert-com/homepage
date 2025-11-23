@@ -7,7 +7,9 @@ tags:
   - German
   - Deep Learning
   - Continued Pretraining
+  - Model Pretraining
   - Open Source
+  - Corpus Design
 date: "2025-06-13"
 
 image:

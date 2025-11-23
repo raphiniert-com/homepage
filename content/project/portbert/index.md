@@ -7,7 +7,7 @@ tags:
   - Portuguese
   - Deep Learning
   - Efficiency
-  - Continued Pretraining
+  - Model Pretraining
   - Open Source
 date: "2025-09-12"
 

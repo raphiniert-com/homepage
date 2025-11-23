@@ -8,6 +8,7 @@ tags:
   - German
   - Deep Learning
   - Open Source
+  - Model Pretraining
 date: "2020-12-03"
 
 # external_link: "https://huggingface.co/GottBERT"
