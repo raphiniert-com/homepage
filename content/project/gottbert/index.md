@@ -45,4 +45,4 @@ Today, GottBERT stands as the first German RoBERTa model, freely available to th
   https://underline.io/events/469/posters/18793/poster/108142-gottbert-a-pure-german-language-model?tab=abstract  
 
 - 🤗 **HuggingFace Model Hub:**  
-  https://huggingface.co/GottBERT  
+  https://huggingface.co/TUM  
