@@ -40,7 +40,7 @@ date_format = "Jan 2006"
   location = "Freiburg"
   date_start = "2015-11-01"
   date_end = "2023-11-30"
-  description = """Extended member of the CCI steering committee, responsibilities within the ESID/AL-PID registry systems, backend workflows and database development. At IMBI, contributed to medical informatics research and clinical NLP work for MIRACUM, including the release of the GottBERT preprint in 2020 (research fellowship from 2021–2023)."""
+  description = """Responsibilities within the ESID/AL-PID registry systems, backend workflows and database development. At IMBI, contributed to medical informatics research and clinical NLP work for MIRACUM, including the release of the GottBERT preprint in 2020 (research fellowship from 2021–2023)."""
 
 [[experience]]
   title = "Lecturer"
