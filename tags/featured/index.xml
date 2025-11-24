@@ -98,7 +98,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
-&lt;a href="https://huggingface.co/GottBERT">https://huggingface.co/GottBERT&lt;/a>&lt;/p>
+&lt;a href="https://huggingface.co/TUM">https://huggingface.co/TUM&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul></description></item><item><title>tala-med Search Engine</title><link>/project/tala-med/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>/project/tala-med/</guid><description>&lt;h2 id="tala-med-search--engineering-a-medical-search-engine-from-prototype-to-modern-ir-platform">tala-med search – Engineering a Medical Search Engine from Prototype to Modern IR Platform&lt;/h2>
 &lt;p>The tala-med search engine began in 2019 as a GAP funded project. I joined initially as technical support, but after a colleague left the team I took over the development lead and guided the system through several difficult phases into a working prototype that could be evaluated scientifically. The early version of tala-med used a React interface based on design drafts created by a graphic designer in the group. On the backend, we used AppSearch together with the Fess crawler. This setup was sufficient for the first prototype and for the first evaluation, but it became clear that the closed ecosystem limited our flexibility, especially regarding custom NLP components and extensible retrieval pipelines.&lt;/p>
