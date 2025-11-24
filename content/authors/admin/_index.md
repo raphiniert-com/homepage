@@ -75,7 +75,7 @@ social:
 #   link: https://www.webofscience.com/wos/author/record/R-1731-2019
 - icon: github
   icon_pack: fab
-  link: https://github.com/scheiblr
+  link: https://github.com/rjschmitt
 # - icon: cv
 #   icon_pack: ai
 #   link: files/cv.pdf
