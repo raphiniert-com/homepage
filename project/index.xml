@@ -212,7 +212,7 @@ unlike earlier TPU-based experiments, the GPU training workflow allowed for a su
 &lt;/li>
 &lt;li>
 &lt;p>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
-&lt;a href="https://huggingface.co/TUM">https://huggingface.co/TUM&lt;/a>&lt;/p>
+&lt;a href="https://huggingface.co/GottBERT">https://huggingface.co/GottBERT&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul></description></item><item><title>MIRACUM-Pipe</title><link>/project/miracum-pipeline/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>/project/miracum-pipeline/</guid><description>&lt;h2 id="miracum-pipe--standardizing-ngs-analysis-for-precision-oncology">MIRACUM-Pipe – Standardizing NGS Analysis for Precision Oncology&lt;/h2>
 &lt;p>MIRACUM-Pipe was one of my main technical contributions during 2019 and 2020, in the context of the MIRACUM consortium and its precision oncology workflows. The pipeline itself had already been established, but required significant modernization, restructuring, and containerization to become robust, reproducible, and easy to deploy across the various MIRACUM sites.&lt;/p>
