@@ -50,5 +50,8 @@ The manuscript was completed far from Germany, during a research stay on the Azo
 - **Preprint (2025):**
   https://arxiv.org/abs/2506.11903
 
+- **Conference Publication (GlobalNLP2025 @ RANLP 2025)**:  
+  https://aclanthology.org/2025.globalnlp-1.6/
+
 - 🤗 **HuggingFace Model Hub:**  
   https://huggingface.co/GeistBERT
