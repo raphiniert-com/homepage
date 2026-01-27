@@ -59,11 +59,17 @@ efficiency is an essential dimension of model design.&lt;br>
 PortBERT achieved competitive results despite being smaller and more cost-efficient than many recent Portuguese encoder LLMs. The study also highlighted that the Portuguese corpus could benefit from greater internal variance, and that techniques like Whole Word Masking might offer additional improvements, though WWM was not available within the TPU workflow used here.&lt;/p>
 &lt;p>With this, PortBERT introduced a new perspective into the Portuguese NLP landscape:&lt;br>
 that efficiency, compute cost, corpus composition, and training dynamics should receive as much attention as raw performance. The goal of the project was not only to build another model, but to encourage the community to look beyond leaderboard scores when developing modern transformer architectures and models.&lt;/p>
-&lt;h2 id="portbert-was-presented-at-globalnlp2025ranlp-2025httpsglobalnlp2025githubio-in-varna-bulgaria-and-we-are-currently-awaiting-its-release-on-the-acl-anthology-the-model-itself-is-publicly-available-on-huggingface">PortBERT was presented at &lt;a href="https://globalnlp2025.github.io">GlobalNLP2025@RANLP 2025&lt;/a> in Varna, Bulgaria, and we are currently awaiting its release on the ACL Anthology. The model itself is publicly available on HuggingFace.&lt;/h2>
+&lt;h2 id="portbert-was-presented-at-globalnlp2025ranlp-2025httpsglobalnlp2025githubio-in-varna-bulgaria-and-the-paper-is-available-on-acl-anthology-the-model-itself-is-publicly-available-on-huggingface">PortBERT was presented at &lt;a href="https://globalnlp2025.github.io">GlobalNLP2025@RANLP 2025&lt;/a> in Varna, Bulgaria, and the paper is available on ACL Anthology. The model itself is publicly available on HuggingFace.&lt;/h2>
 &lt;h2 id="links--resources">Links &amp;amp; Resources&lt;/h2>
 &lt;ul>
-&lt;li>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
-&lt;a href="https://huggingface.co/PortBERT">https://huggingface.co/PortBERT&lt;/a>&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Conference Publication (GlobalNLP2025 @ RANLP 2025)&lt;/strong>:&lt;br>
+&lt;a href="https://aclanthology.org/2025.globalnlp-1.8/">https://aclanthology.org/2025.globalnlp-1.8/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
+&lt;a href="https://huggingface.co/PortBERT">https://huggingface.co/PortBERT&lt;/a>&lt;/p>
+&lt;/li>
 &lt;/ul></description></item><item><title>GeistBERT</title><link>/project/geistbert/</link><pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate><guid>/project/geistbert/</guid><description>&lt;h2 id="a-story-of-resilience-constraint-and-scientific-maturity">A Story of Resilience, Constraint, and Scientific Maturity&lt;/h2>
 &lt;p>GeistBERT was created during one of the most turbulent and defining phases of my doctoral work. AFollowing a supervisor transition at TUM, access to the compute environment I previously used was no longer available, so I migrated the entire evaluation workflow to my own workstation. What could have halted the project entirely instead became a turning point.&lt;/p>
 &lt;p>With no cluster access, I migrated the full evaluation pipeline into my basement and ran it on a self-built workstation with two RTX 3090 GPUs in SLI. Every downstream task was completed entirely on private hardware. Constraints turned into autonomy, and the work slowly took shape.&lt;/p>
