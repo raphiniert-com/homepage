@@ -50,6 +50,10 @@ unlike earlier TPU-based experiments, the GPU training workflow allowed for a su
 &lt;a href="https://arxiv.org/abs/2506.11903">https://arxiv.org/abs/2506.11903&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>&lt;strong>Conference Publication (GlobalNLP2025 @ RANLP 2025)&lt;/strong>:&lt;br>
+&lt;a href="https://aclanthology.org/2025.globalnlp-1.6/">https://aclanthology.org/2025.globalnlp-1.6/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>🤗 &lt;strong>HuggingFace Model Hub:&lt;/strong>&lt;br>
 &lt;a href="https://huggingface.co/GeistBERT">https://huggingface.co/GeistBERT&lt;/a>&lt;/p>
 &lt;/li>
