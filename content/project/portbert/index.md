@@ -33,10 +33,12 @@ PortBERT achieved competitive results despite being smaller and more cost-effici
 With this, PortBERT introduced a new perspective into the Portuguese NLP landscape:
 that efficiency, compute cost, corpus composition, and training dynamics should receive as much attention as raw performance. The goal of the project was not only to build another model, but to encourage the community to look beyond leaderboard scores when developing modern transformer architectures and models.
 
-PortBERT was presented at [GlobalNLP2025@RANLP 2025](https://globalnlp2025.github.io) in Varna, Bulgaria, and we are currently awaiting its release on the ACL Anthology. The model itself is publicly available on HuggingFace.
+PortBERT was presented at [GlobalNLP2025@RANLP 2025](https://globalnlp2025.github.io) in Varna, Bulgaria, and the paper is available on ACL Anthology. The model itself is publicly available on HuggingFace.
 ---
 
 ## Links & Resources
+- **Conference Publication (GlobalNLP2025 @ RANLP 2025)**:  
+  https://aclanthology.org/2025.globalnlp-1.8/
 
 - 🤗 **HuggingFace Model Hub:**  
   https://huggingface.co/PortBERT
