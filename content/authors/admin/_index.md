@@ -61,7 +61,7 @@ social:
   link: https://www.researchgate.net/profile/Raphael_Scheible
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.com/citations?hl=en&user=gQ2pZf8AAAAJ
+  link: https://scholar.google.com/citations?user=PjGxdRcAAAAJ
 - icon: publons
   icon_pack: ai
   link: https://www.webofscience.com/wos/author/record/R-1731-2019
