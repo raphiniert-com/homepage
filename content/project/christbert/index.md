@@ -42,7 +42,7 @@ During my third stay in the Azores, in August 2026, ChristBERT was published ope
 
 ## Links & Resources
 
-- **Journal article (2026):** https://doi.org/10.1186/s12911-026-03728-2
+- **Journal Publication (2026):** https://doi.org/10.1186/s12911-026-03728-2
 
 - **Preprint (2026):** https://arxiv.org/abs/2606.03250
 
