@@ -24,17 +24,27 @@ image:
 
 ## Building a Medical German Language Model Against the Odds
 
-ChristBERT was developed as part of Henry He's Master's thesis that I supervised and focuses on domain-specific German clinical language modeling. The project investigated two complementary strategies: continued pre-training on top of GottBERT/GeistBERT, and training from scratch using both a general-purpose RoBERTa tokenizer and a specialized medical vocabulary. This enabled a systematic comparison between general, domain-adapted, and fully specialized pre-training pipelines for German medical NLP.
+ChristBERT was developed as part of Henry He’s Master’s thesis, which I supervised, and focuses on domain-specific language modeling for German medical NLP. A central contribution of the project was the construction of a 13.5 GB German medical corpus comprising scientific publications, clinical texts, health-related web content, and translated clinical resources.
 
-During the early conceptual phase, the supervision structure of the thesis changed, and the project was reassigned to a new advisor, who later became the supervisor of my doctoral work. ChristBERT was trained using a combination of compute resources: through an existing project partnership, parts of the full pre-training were executed on the Augsburg compute cluster, while downstream evaluations, and parts of the translation workflows ran on privately built GPU hardware in my basement.
+Using this corpus, we systematically investigated three strategies for adapting language models to the medical domain: continued pre-training of established German RoBERTa models, training a model from scratch with a general-purpose tokenizer, and training from scratch with a specialized medical vocabulary. This enabled a controlled comparison of general-purpose, domain-adapted, and fully specialized pre-training pipelines.
 
-ChristBERT showed that continued pre-training on German clinical text offers measurable improvements over general-purpose RoBERTa models, while training from scratch with a medical-specific tokenizer provides additional insights into domain vocabulary specialization and its trade-offs.
+During the project’s early conceptual phase, the thesis supervision structure changed, and the work was reassigned to a new advisor, who later also became the supervisor of my doctoral research. ChristBERT was trained using a combination of institutional and privately maintained compute resources. Through an existing project partnership, parts of the full pre-training were conducted on the Augsburg compute cluster, while downstream evaluation and parts of the translation workflow ran on GPU hardware that I had built in my basement.
 
-The work has been released as a preprint and is currently under review at BMC Medical Informatics and Decision Making.
+The results demonstrate that no single adaptation strategy is universally optimal. Continued pre-training produced the strongest results on most evaluated tasks, while training from scratch and adapting the vocabulary proved advantageous under particular task and domain conditions. Across five German medical NLP benchmarks, ChristBERT outperformed existing general-purpose and medical language models on four tasks and established new state-of-the-art results on several clinical NLP benchmarks.
+
+The project also has a close personal connection to the Azores. ChristBERT was born during my first trip there in 2024, when the initial idea emerged in a Zoom meeting with Henry. The journey to the islands already coincided with another important milestone: while waiting at Zurich Airport for my flight, I received a WhatsApp message from Johann informing me that GottBERT had been accepted at EMNLP.
+
+In 2025, I returned to the Azores for an internship and joined Henry’s Master’s thesis defense remotely via Zoom. The ChristBERT manuscript was subsequently submitted in August 2025.
+
+During my third stay in the Azores, in August 2026, ChristBERT was published open access in BMC Medical Informatics and Decision Making as "The word and the way: strategies for domain-specific BERT pre-training in German medical NLP." Two years after the project had been conceived there, its journey came full circle. The publication marked the conclusion of a long and demanding process.
 
 ---
 
 ## Links & Resources
+
+- **Journal article (2026):** https://doi.org/10.1186/s12911-026-03728-2
+
+- **Preprint (2026):** https://arxiv.org/abs/2606.03250
 
 - **Preprint (2025):**  
   https://www.researchsquare.com/article/rs-7332811/v1
