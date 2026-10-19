@@ -12,8 +12,7 @@ header:
   image: ""
 ---
 ## Angaben gemäß § 5 TMG
-Raphael Johannes Scheible-Schmitt
-auftretend unter Raphael Schmitt
+Raphael Johannes Schmitt
 CAYA Postbox 985694
 96035 Bamberg
 Deutschland
